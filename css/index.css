@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 80%;
     margin: auto;
 }
 
@@ -101,14 +101,20 @@ h3 {
 }
 
 .logo-row .btn {
-    font-size: 20px;
+    font-size: 14px;
+    color: #fff;
 }
 
 .corona {
     margin: 30px 0;
+
     text-align: center;
     color: #fff;
     background: #0b81a0;
+}
+
+.corona h2 {
+    font-size: 1.5rem;
 }
 /* ...........INDEX BANNER......... */
 .index-banner {
@@ -129,6 +135,7 @@ h3 {
 }
 .dashboard-card-header {
     padding: 5px 0;
+    color: #fff;
     background: #0b81a0;
 }
 
@@ -184,15 +191,15 @@ h3 {
 /* =============DOCTORS BANNER===========*/
 .banner-container {
     position: relative;
-    height: 500px;
-    width: 1200px;
+    height: 400px;
+    width: 100%;
 }
 
 .doctors-banner {
     position: absolute;
     background-image: url("/images/banner-2.jpg");
     filter: grayscale(9) blur(10px);
-    height: 400px;
+    height: 100%;
     width: 100%;
 }
 
@@ -260,7 +267,7 @@ h3 {
 
 .directory-grid .results-grid .result img {
     filter: sepia(0.9);
-    width: 175px;
+    max-width: 50%;
 }
 
 .search {

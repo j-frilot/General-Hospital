@@ -6,10 +6,16 @@
     .specialties-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    .banner-container {
+        height: 300px;
+    }
 }
 
 /* when get to 768 and smaller */
 @media (max-width: 768px) {
+    .corona-toggle {
+        display: none;
+    }
     .dashboard {
         grid-template-columns: 1fr;
     }
@@ -18,6 +24,12 @@
     }
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .banner-container {
+        height: 200px;
+    }
+    .doctors-banner-body h2 {
+        font-size: 2.5rem;
     }
     .directory-grid .results-grid {
         grid-template-columns: repeat(2, 1fr);
