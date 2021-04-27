@@ -13,8 +13,14 @@
 
 /* when get to 768 and smaller */
 @media (max-width: 768px) {
+    .logo-list h1 {
+        font-size: 1.75rem;
+    }
     .corona-toggle {
         display: none;
+    }
+    .index-banner {
+        height: 300px;
     }
     .dashboard {
         grid-template-columns: 1fr;
@@ -38,6 +44,17 @@
 
 /* when get to 600 and smaller */
 @media (max-width: 600px) {
+    .logo-row {
+        font-size: 1.25rem;
+        justify-content: center;
+    }
+    .logo-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .index-banner {
+        height: 200px;
+    }
     .directory-grid {
         display: flex;
         flex-wrap: wrap;

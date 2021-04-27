@@ -79,6 +79,7 @@ h3 {
 .top-nav {
     margin: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -92,8 +93,14 @@ h3 {
 
 .logo-row {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo-list {
+    display: flex;
+    /* align-items: baseline; */
 }
 
 .logo-row .img {
