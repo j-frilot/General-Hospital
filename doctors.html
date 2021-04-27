@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="css/modern-reset.css"> -->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+
+
+    <title>Find Doctor</title>
+</head>
+
+    <body>
+        <header class="container">
+            <div class="top-nav">
+                <ul>
+                    <li><a href="" class="black-text">Quicks Links</a></li>
+                    <li><a href="" class="black-text">Patient Portals</a></li>
+                    <li><a href="" class="black-text">International</a></li>
+                </ul>
+                <a href="">Make an appointment today.</a>
+            </div>
+            <div class="logo-row">
+                <a href="index.html"><img src="images/hospital-logo.png" alt="hospital-logo" class="img hospital-img"></a>
+                <h1 class=" brand-logo red-text center">Children's National</h1></a>
+
+                <div><a href="doctors.html" class="black-text right white btn z-depth-0">Find a Doctor</a>
+                    <a href="" class="red right btn z-depth-0">Make An Appointment</a>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="corona">
+                <h2 class="container"><a href=""><span class="bold">Coronavirus Update:</span> What patients and families
+                        need to know.</a> </h2>
+            </div>
+
+        </header>
+        <main class="container">
+            <section class="banner-container">
+                <div class="banner doctors-banner"></div>
+                <div class="doctors-banner-body">
+                    <h2>Find A Doctor</h2><hr>
+                </div>
+            </section>
+            <hr class="hr">
+
+
+            <section class="directory directory-grid">
+                <div class="search">
+                    <h3>Filter Results</h3>
+                    <form action="" class="doctor-filter" id="doctor-filter">
+
+                        <div class="form-group">
+                            <label for="search-name">Search By Name</label>
+                            <input type="text" id="search-name" class="form-input" name="name" placeholder="Search Name">
+                        </div>
+                        
+                        
+                    
+                        <div class="form-group">
+                            <label for="search_specialty">Find by Specialty</label>
+                            <select name="specialty" class="form-input" id="search-specialty">
+                                <option value="">All Specialties</option>
+                                <option value="abdominal-imaging">Abdominal Imaging</option>
+                                <option value="acute-care-surgery">Acute Care Surgery</option>
+                                <option value="addiction-psychiatry">Addiction Psychiatry</option>
+                                <option value="adolescent-medicine">Adolescent Medicine</option>
+                                <option value="allergy-immunology">Allergy &amp; Immunology</option>
+                                <option value="anatomic-clinical-pathology">Anatomic &amp; Clinical Pathology</option>
+                                <option value="anesthesiology">Anesthesiology</option>
+                                <option value="breast-imaging">Breast Imaging</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="cardiology-interventional-cardiology">Cardiology &amp; Interventional Cardiology</option>
+                                <option value="cardiothoracic-vascular-surgery">Cardiothoracic Vascular Surgery</option>
+                                <option value="cardiovascular-disease">Cardiovascular Disease</option>
+                                <option value="cardiovascular-disease-cardiology">Cardiovascular Disease/Cardiology</option>
+                                <option value="child-adolescent-psychiatry">Child &amp; Adolescent Psychiatry</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <div class="form-group radio-gender">
+                            <label for="search_specialty">Find By Gender</label>
+                            <input class="radio-input" type="radio" name="gender" id="gender-none" value="" checked>
+                            <label class="radio-label" for="gender-none">No Preference</label>
+                            <input class="radio-input" type="radio" name="gender" id="gender-female" value="Female">
+                            <label class="radio-label" for="gender-female">Female Physicians</label>
+                            <input class="radio-input" type="radio" name="gender" id="gender-male" value="Male">
+                            <label class="radio-label" for="gender-male">Male Physicians</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button class="btn-submit btn">Apply</button>
+                        </div>
+                        
+                        <input type="hidden" name="action" value="filter_find_a_doctor">
+                    </form>
+
+                        
+
+                    
+                    
+                </div>
+
+                <div class="results">
+                    <div class="alphabet">
+                        <a href="" class="all">All</a>
+                        <a href="" class="a">A</a>
+                        <a href="" class="b">B</a>
+                        <a href="" class="c">C</a>
+                        <a href="" class="d">D</a>
+                        <a href="" class="e">E</a>
+                        <a href="" class="f">F</a>
+                        <a href="" class="g">G</a>
+                        <a href="" class="h">H</a>
+                        <a href="" class="i">I</a>
+                        <a href="" class="j">J</a>
+                        <a href="" class="k">K</a>
+                        <a href="" class="l">L</a>
+                        <a href="" class="m">M</a>
+                        <a href="" class="n">N</a>
+                        <a href="" class="o">O</a>
+                        <a href="" class="p">P</a>
+                        <a href="" class="q">Q</a>
+                        <a href="" class="r">R</a>
+                        <a href="" class="s">S</a>
+                        <a href="" class="t">T</a>
+                        <a href="" class="u">U</a>
+                        <a href="" class="v">V</a>
+                        <a href="" class="w">W</a>
+                        <a href="" class="x">X</a>
+                        <a href="" class="y">Y</a>
+                        <a href="" class="z">Z</a>
+                    </div>
+                    <div class="results-grid">
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        <div class="results-grid-item result">
+                            <img src="images/specialty-1.png" alt="">
+                            <h3>Physicians' Name</h3>
+                            <p>Specialty</p>
+                        </div>
+                        </div>
+                    </div>
+                    
+            </section>
+
+
+
+        </main>
+
+
+
+
+        <footer class="container">
+            <section class="footer-grid">
+                <div class="footer-grid-item">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-ul">
+                        <li>125 Main Street</li>
+                        <li>Codeville, MS 12012</li>
+                        <li>(555) 555-5555</li>
+                        <li><a href="/">Directions</a></li>
+                        <li><a href="/">Other Locations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid-item">
+                    <h3>About General</h3>
+                    <ul class="contact-ul">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>News</li>
+                        <li>Physicians</li>
+                    </ul>
+                </div>
+                <div class="footer-grid-item">
+                    <h3>Helpful Links</h3>
+                    <ul class="contact-ul">
+                        <li>CDC</li>
+                        <li>COVID</li>
+                        <li>Physicians</li>
+                        <li>Make an appointment</li>
+                    </ul>
+                </div>
+                <div class="footer-grid-item">
+                    <h3>Other</h3>
+                    <ul class="contact-ul">
+                        <li>Donate</li>
+                        <li>Subscribe To Newsletter</li>
+                        <li><a href="/">Facebook</a></li>
+        
+                    </ul>
+                </div>
+            </section>
+        
+            <section class="copy-right">
+                &copy 2021 General Hospital Company. All Rights Reserved
+            </section>
+        </footer>
+    </body>
+ </html>
+
+
+
+
+ 
+

@@ -1,0 +1,39 @@
+/* when get to 992 and smaller */
+@media (max-width: 992px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .specialties-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* when get to 768 and smaller */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    .specialties-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .directory-grid .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* when get to 600 and smaller */
+@media (max-width: 600px) {
+    .directory-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .directory-grid .results-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
