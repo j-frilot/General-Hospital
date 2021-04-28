@@ -80,7 +80,7 @@ h3 {
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .top-nav ul {
@@ -230,10 +230,10 @@ h3 {
 }
 
 .directory-grid .alphabet {
-    font-size: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 16px;
 }
 
 .directory-grid form {
@@ -256,10 +256,12 @@ h3 {
 .directory-grid form .form-group {
     /* display: block; */
     /* flex-direction: column; */
+    margin: auto;
     padding: 15px 0;
 }
 
 .directory-grid .results-grid {
+    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -270,11 +272,14 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
 }
 
 .directory-grid .results-grid .result img {
     filter: sepia(0.9);
     max-width: 50%;
+    border: solid 1px #0b81a0;
 }
 
 .search {
