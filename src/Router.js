@@ -1,8 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./Home";
-import Doctors from "./Doctors";
-import Covid from "./Covid";
+import Home from "./components/pages/Home";
+import Doctors from "./components/pages/Doctors";
+import Covid from "./components/pages/Covid";
 
 const Router = () => {
     return (

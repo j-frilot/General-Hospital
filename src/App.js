@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "./Header";
+import Header from "./components/partials/Header";
 import Router from "./Router";
-import Footer from "./Footer";
+import Footer from "./components/partials/Footer";
 
 function App() {
     return (
