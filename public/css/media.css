@@ -19,7 +19,9 @@
     .corona-toggle {
         display: none;
     }
-    .index-banner {
+    .index-banner,
+    .banner-container,
+    .covid-banner {
         height: 300px;
     }
     .dashboard {
@@ -30,9 +32,6 @@
     }
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .banner-container {
-        height: 200px;
     }
     .doctors-banner-body h2 {
         font-size: 2.5rem;
@@ -52,7 +51,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .index-banner {
+    .index-banner,
+    .banner-container,
+    .covid-banner {
         height: 200px;
     }
     .directory-grid {

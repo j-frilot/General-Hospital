@@ -206,12 +206,14 @@ const physicians = [
 
 let resultsGrid = document.querySelector(".results-grid");
 
-let physicianMap = physicians.map((physician) => {
-    return `<div class="results-grid-item result">
+window.addEventListener("DOMContentLoaded", () => {
+    let physicianMap = physicians.map((physician) => {
+        return `<div class="results-grid-item result">
                     <img src="${physician.img}" alt="physician-photo" class="physician-img">
                     <h3>${physician.first_name} ${physician.last_name}</h3>
                     <p>${physician.specialty}</p>
                 </div>`;
+    });
+    physicianMap = physicianMap.join("");
+    resultsGrid.innerHTML = physicianMap;
 });
-physicianMap = physicianMap.join("");
-resultsGrid.innerHTML = physicianMap;
