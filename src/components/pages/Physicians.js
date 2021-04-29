@@ -1,12 +1,12 @@
 import React from "react";
 import PhysicianResults from "../sections/PhysicianResults";
 
-const Doctors = (props) => {
+const Physicians = (props) => {
     return (
         <main className="container">
             <section className="banner-container">
-                <div className="banner doctors-banner"></div>
-                <div className="doctors-banner-body">
+                <div className="banner physicians-banner"></div>
+                <div className="physicians-banner-body">
                     <h2>Find A Doctor</h2>
                     <hr />
                 </div>
@@ -225,4 +225,4 @@ const Doctors = (props) => {
     );
 };
 
-export default Doctors;
+export default Physicians;

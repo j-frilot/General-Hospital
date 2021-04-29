@@ -4,7 +4,7 @@ const Covid = () => {
     const [covidStateResults, setCovidStateResults] = useState(null);
 
     useEffect(() => {
-        fetch("https://covidtracking.com/api/states")
+        fetch("https://corona.lmao.ninja/v2/states?sort=&yesterday=")
             .then((response) => response.json())
             .then((response) => {
                 console.log(response);

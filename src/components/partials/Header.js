@@ -7,7 +7,7 @@ const Header = () => {
             <div className="top-nav">
                 <ul>
                     <li>
-                        <NavLink to="/doctors" className="black-text">
+                        <NavLink to="/physicians" className="black-text">
                             Physicians
                         </NavLink>
                     </li>
@@ -29,7 +29,7 @@ const Header = () => {
                     <li>
                         <NavLink to="/">
                             <img
-                                src="images/hospital-logo.png"
+                                src="/images/hospital-logo.png"
                                 alt="hospital-logo"
                                 className="img hospital-img"
                             />
@@ -45,7 +45,7 @@ const Header = () => {
                 </ul>
                 <div>
                     <NavLink
-                        to="/doctors"
+                        to="/physicians"
                         className="black-text right white btn z-depth-0"
                     >
                         Find a Doctor

@@ -72,7 +72,7 @@ const Home = () => {
                     <div className="dashboard-card-header">
                         <h3>
                             <i className="fas fa-user-md icon"></i>{" "}
-                            <NavLink to="/doctors"> Find A Doctor</NavLink>
+                            <NavLink to="/physicians"> Find A Doctor</NavLink>
                         </h3>
                     </div>
                     <div className="dashboard-card-body">
