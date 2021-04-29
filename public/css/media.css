@@ -33,6 +33,9 @@
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer-grid-item {
+        border: solid 1px #0b81a0;
+    }
     .doctors-banner-body h2 {
         font-size: 2.5rem;
     }
@@ -65,5 +68,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
     }
 }

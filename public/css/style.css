@@ -274,12 +274,19 @@ h3 {
     text-align: center;
     font-size: 16px;
     text-transform: capitalize;
+    border: solid 1px #0b81a0;
 }
 
 .directory-grid .results-grid .result img {
     filter: sepia(0.9);
     max-width: 50%;
     border: solid 1px #0b81a0;
+}
+
+.directory-grid .results-grid .result .bg {
+    padding: 2px 6px;
+    color: #fff;
+    background: #0b81a0;
 }
 
 .search {

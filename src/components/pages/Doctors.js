@@ -1,6 +1,7 @@
 import React from "react";
+import PhysicianResults from "../sections/PhysicianResults";
 
-const Doctors = () => {
+const Doctors = (props) => {
     return (
         <main className="container">
             <section className="banner-container">
@@ -21,7 +22,7 @@ const Doctors = () => {
                         id="doctor-filter"
                     >
                         <div className="form-group">
-                            <label for="search-name">Search By Name</label>
+                            <label htmlFor="search-name">Search By Name</label>
                             <input
                                 type="text"
                                 id="search-name"
@@ -32,7 +33,7 @@ const Doctors = () => {
                         </div>
 
                         <div className="form-group">
-                            <label for="search_specialty">
+                            <label htmlFor="search_specialty">
                                 Find by Specialty
                             </label>
                             <select
@@ -75,16 +76,20 @@ const Doctors = () => {
                         </div>
 
                         <div className="form-group radio-gender">
-                            <label for="search_specialty">Find By Gender</label>
+                            <label htmlFor="search_specialty">
+                                Find By Gender
+                            </label>
                             <input
                                 className="radio-input"
                                 type="radio"
                                 name="gender"
                                 id="gender-none"
                                 value="#!"
-                                checked
                             />
-                            <label className="radio-label" for="gender-none">
+                            <label
+                                className="radio-label"
+                                htmlFor="gender-none"
+                            >
                                 No Preference
                             </label>
                             <input
@@ -94,7 +99,10 @@ const Doctors = () => {
                                 id="gender-female"
                                 value="Female"
                             />
-                            <label className="radio-label" for="gender-female">
+                            <label
+                                className="radio-label"
+                                htmlFor="gender-female"
+                            >
                                 Female Physicians
                             </label>
                             <input
@@ -104,7 +112,10 @@ const Doctors = () => {
                                 id="gender-male"
                                 value="Male"
                             />
-                            <label className="radio-label" for="gender-male">
+                            <label
+                                className="radio-label"
+                                htmlFor="gender-male"
+                            >
                                 Male Physicians
                             </label>
                         </div>
@@ -205,7 +216,9 @@ const Doctors = () => {
                             Z
                         </a>
                     </div>
-                    <div className="results-grid"></div>
+                    <div className="results-grid">
+                        <PhysicianResults />
+                    </div>
                 </div>
             </section>
         </main>
