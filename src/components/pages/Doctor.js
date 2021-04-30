@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Doctor = () => {
     const [doctorInfo, setDoctorInfo] = useState({});
 
@@ -16,45 +17,46 @@ const Doctor = () => {
     return (
         <>
             <main className="container">
-                <div className="doctor-top">
-                    <div className="doctor-top-name">
+                <div className="doctor-top-row">
+                    <div className="doctor-top-row-heading">
                         <h2>
                             Dr. {doctorInfo.first_name} {doctorInfo.last_name}{" "}
                         </h2>
                     </div>
-                    <div className="doctor-top-info">
-                        <div className="doctor-top-info-image">
+                    <div className="doctor-top-row-info">
+                        <div className="doctor-top-row-info-column-left">
                             <img
                                 src={`/images/${doctorInfo.photo}`}
                                 alt="physician"
                                 className="physician-img"
                             />
                         </div>
-                        <div className="doctor-top-info">
-                            <ul>
-                                <li>
-                                    <p>Specialty: {doctorInfo.specialty}</p>
-                                </li>
-                                <li>
-                                    <p>Office Number: {doctorInfo.telephone}</p>
-                                </li>
-                                <li>
-                                    <p>Office Number: {doctorInfo.office}</p>
-                                </li>
-                                <li>
-                                    <p>School: {doctorInfo.education}</p>
-                                    <li>
-                                        <h3>
-                                            About Dr. {doctorInfo.last_name}
-                                        </h3>
-                                        <p className="bio">{doctorInfo.info}</p>
-                                    </li>
-                                </li>
-                            </ul>
+                        <div className="doctor-top-row-info-column-right">
+                            <div className="top-row-info-item">
+                                <h3>Specialty:</h3>
+                                <h3>{doctorInfo.specialty}</h3>
+                            </div>
+                            <div className="top-row-info-item">
+                                <h3>Phone:</h3> <h3>{doctorInfo.telephone}</h3>
+                            </div>
+                            <div className="top-row-info-item">
+                                <h3>Office#:</h3> <h3>{doctorInfo.office}</h3>
+                            </div>
+                            <div className="top-row-info-item">
+                                <h3>School:</h3> <h3>{doctorInfo.education}</h3>
+                            </div>
+                            <NavLink to="/" className=" top-row-infor-item btn">
+                                Schedule An Appointment
+                            </NavLink>
                         </div>
                     </div>
                 </div>
-                <div className="doctor-bottom"></div>
+                <div className="doctor-bottom-row">
+                    <div className="doctor-bottom-row-bio">
+                        <h3>About Dr. {doctorInfo.last_name}</h3>
+                        <p>{doctorInfo.info}</p>
+                    </div>
+                </div>
             </main>
         </>
     );

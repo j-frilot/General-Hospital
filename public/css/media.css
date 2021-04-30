@@ -13,11 +13,17 @@
 
 /* when get to 768 and smaller */
 @media (max-width: 768px) {
-    .logo-list h1 {
+    .logo-row h1 {
         font-size: 1.75rem;
     }
-    .corona-toggle {
+    .covid-alert p {
+        font-size: 16px;
+    }
+    .covid-toggle {
         display: none;
+    }
+    .header-content {
+        padding: 0;
     }
     .index-banner,
     .banner-container,
@@ -39,6 +45,17 @@
     .directory-grid .results-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* .doctor-top-row-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-transform: capitalize;
+    }*/
+
+    .top-row-info-item h3 {
+        font-size: 18px;
+    }
 }
 
 /* when get to 600 and smaller */
@@ -46,10 +63,11 @@
     .logo-row {
         font-size: 1.25rem;
         justify-content: center;
-    }
-    .logo-list {
         flex-wrap: wrap;
-        justify-content: center;
+    }
+
+    .nav-bar {
+        padding: 10px;
     }
     .index-banner,
     .banner-container,
@@ -72,5 +90,12 @@
     .footer-grid {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-row h1 {
+        text-align: center;
+        border: initial;
     }
 }

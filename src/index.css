@@ -49,11 +49,10 @@ h3 {
 }
 
 .btn {
-    background-color: #0d2818;
+    background-color: #0b81a0;
     padding: 5px 20px;
     outline: none;
     border: none;
-    color: #eee;
 }
 
 .bold {
@@ -64,7 +63,7 @@ h3 {
 
 .hr {
     margin: 30px 0;
-    border: solid 1px #0d2818;
+    border: solid 1px #0b81a0;
 }
 
 .banner {
@@ -76,47 +75,32 @@ h3 {
 }
 
 /* ...........HEADER......... */
-header {
-    background-color: #333;
-}
 
-.covid-alert {
+.top-nav {
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    background-color: #eee;
-    text-align: center;
 }
 
-.covid-alert h1 {
-    font-size: 20px;
-    padding-right: 5px;
+.top-nav ul {
+    display: flex;
 }
 
-.covid-alert p {
-    font-size: 20px;
-}
-
-.header-content {
-    padding-top: 20px;
+.top-nav ul li {
+    padding-right: 20px;
 }
 
 .logo-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
 }
 
-.logo-row h1 {
-    padding-left: 15px;
-    margin: 0 15px;
-    color: #eee;
-    font-size: 45px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    border-left: solid 3px;
+.logo-list {
+    display: flex;
+    /* align-items: baseline; */
 }
 
 .logo-row .img {
@@ -125,19 +109,20 @@ header {
 
 .logo-row .btn {
     font-size: 14px;
-    color: #eee;
+    color: #fff;
 }
 
-.nav-bar {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    color: #eee;
-    text-transform: uppercase;
-    font-weight: bold;
+.corona {
+    margin: 30px 0;
+
+    text-align: center;
+    color: #fff;
+    background: #0b81a0;
 }
 
+.corona h2 {
+    font-size: 1.5rem;
+}
 /* ...........INDEX BANNER......... */
 .index-banner {
     background-image: url("/images/banner-1.jpg");
@@ -153,12 +138,12 @@ header {
 
 .dashboard .dashboard-card {
     padding: 15px;
-    border: solid 2px #0d2818;
+    border: solid 2px #0b81a0;
 }
 .dashboard-card-header {
     padding: 5px 0;
-    color: #eee;
-    background: #0d2818;
+    color: #fff;
+    background: #0b81a0;
 }
 
 .dashboard-card-body {
@@ -194,7 +179,7 @@ header {
 }
 
 .footer-grid-item {
-    border: solid 1px #0d2818;
+    border: solid 1px #0b81a0;
 }
 
 .copy-right {
@@ -227,7 +212,7 @@ header {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
-    color: #eee;
+    color: #fff;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -247,7 +232,7 @@ header {
 
 .directory-grid form {
     padding: 10px;
-    color: #0d2818;
+    color: #0b81a0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -283,19 +268,19 @@ header {
     text-align: center;
     font-size: 16px;
     text-transform: capitalize;
-    border: solid 1px #0d2818;
+    border: solid 1px #0b81a0;
 }
 
 .directory-grid .results-grid .result img {
     filter: sepia(0.9);
     max-width: 50%;
-    border: solid 1px #0d2818;
+    border: solid 1px #0b81a0;
 }
 
 .directory-grid .results-grid .result .bg {
     padding: 2px 6px;
-    color: #eee;
-    background: #0d2818;
+    color: #fff;
+    background: #0b81a0;
 }
 
 .search {
@@ -314,43 +299,37 @@ header {
 /* =============DOCTOR=============*/
 /* ================================*/
 
-.doctor-top-row-heading {
+.doctor-top {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    /* padding: 15px; */
+}
+
+.doctor-top-name {
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-decoration: underline;
     text-transform: capitalize;
 }
 
-.doctor-top-row-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.doctor-top-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 10px; */
+    padding-bottom: 15px;
+    justify-items: center;
     align-items: center;
-    padding: 15px 0;
     text-transform: capitalize;
 }
 
-.doctor-top-row-info-column-left img {
-    max-width: 200px;
+.doctor-top-info img {
+    max-width: 300px;
 }
 
-.top-row-info-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.doctor-top-info li {
+    font-size: 14px;
 }
 
-.top-row-info-item h3 {
-    font-size: 23px;
-}
-
-.top-row-info-item .btn {
-    color: #eee;
-}
-
-.doctor-bottom-row {
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
+.doctor-top-info li .bio {
+    text-transform: none;
 }
