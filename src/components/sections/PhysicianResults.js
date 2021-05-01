@@ -19,7 +19,7 @@ const PhysicianResults = () => {
                 {searchResults.map((result) => (
                     <div
                         className="results-grid-item result"
-                        key={result.physician_id}
+                        key={result.physicians_id}
                     >
                         <NavLink to={`/physicians/${result.physicians_id}`}>
                             <img

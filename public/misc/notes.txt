@@ -64,7 +64,15 @@
 -- | height             | smallint    | YES  |     | NULL    |                |
 -- | weight    
 
-
+<input
+                                type="number"
+                                name="physicians_id "
+                                required
+                                placeholder="Doctor Id *"
+                                onChange={(event) => {
+                                    setPhysiciansId(event.target.value);
+                                }}
+                            />
 
 <label for="job">Interests:</label>
                                 <select id="job" name="field4">

@@ -77,14 +77,28 @@ const Appointment = () => {
                                 }}
                             >
                                 <optgroup label="Physicians">
-                                    <option value="1">John</option>
-                                    <option value="2">Bob</option>
-                                    <option value="3">Joe</option>
+                                    <option value="1">Steven Santiago</option>
+                                    <option value="2">Jan Sharp</option>
+                                    <option value="3">Joy Mckenzie</option>
+                                    <option value="4">Sophie Mccormik</option>
+                                    <option value="5">Dave Morrison</option>
+                                    <option value="6">Leigh Morton</option>
+                                    <option value="7">Jamie Rodgers</option>
+                                    <option value="8">Horace Roberts</option>
+                                    <option value="9">Clara Burke</option>
+                                    <option value="10">Geneva Curtis</option>
+                                    <option value="11">Meghan Brewer</option>
+                                    <option value="12">Vernon Owens</option>
+                                    <option value="13">Lynn Greene</option>
+                                    <option value="14">Heather Sherman</option>
+                                    <option value="15">Johnathan</option>
+                                    <option value="16">Joe Chandler</option>
+                                    <option value="17">Angeline Collins</option>
                                 </optgroup>
                             </select>
 
                             <input
-                                type="text"
+                                type="date"
                                 name="appointment_date"
                                 required
                                 placeholder="Appointment Date"
@@ -103,10 +117,11 @@ const Appointment = () => {
                                 }}
                             />
                             <input
-                                type="text"
+                                type="tel"
                                 name="telephone"
                                 required
-                                placeholder="Telephone Number *"
+                                placeholder="Telephone 123-456-789*"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 onChange={(event) => {
                                     setTelephone(event.target.value);
                                 }}
