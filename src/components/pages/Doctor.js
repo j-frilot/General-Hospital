@@ -45,7 +45,10 @@ const Doctor = () => {
                             <div className="top-row-info-item">
                                 <h3>School:</h3> <h3>{doctorInfo.education}</h3>
                             </div>
-                            <NavLink to="/" className=" top-row-infor-item btn">
+                            <NavLink
+                                to="/appointment"
+                                className=" top-row-infor-item btn"
+                            >
                                 Schedule An Appointment
                             </NavLink>
                         </div>

@@ -51,3 +51,171 @@
           setPage(page);
       });
   }, []);
+
+       appointment_id     | tinyint     | NO   | PRI | NULL    | auto_increment |
+-- | patient_id         | int         | YES  |     | NULL    |                |
+-- | patient_first_name | varchar(30) | YES  |     | NULL    |                |
+-- | patient_last_name  | varchar(30) | YES  |     | NULL    |                |
+-- | physicians_id      | int         | YES  |     | NULL    |                |
+-- | appointment_date   | date        | YES  |     | NULL    |                |
+-- | insurance          | varchar(20) | YES  |     | NULL    |                |
+-- | telephone          | varchar(15) | YES  |     | NULL    |                |
+-- | comments           | text        | YES  |     | NULL    |                |
+-- | height             | smallint    | YES  |     | NULL    |                |
+-- | weight    
+
+
+
+<label for="job">Interests:</label>
+                                <select id="job" name="field4">
+                                    <optgroup label="Indoors">
+                                        <option value="fishkeeping">
+                                            Fishkeeping
+                                        </option>
+                                        <option value="reading">Reading</option>
+                                        <option value="boxing">Boxing</option>
+                                        <option value="debate">Debate</option>
+                                        <option value="gaming">Gaming</option>
+                                        <option value="snooker">Snooker</option>
+                                        <option value="other_indoor">
+                                            Other
+                                        </option>
+                                    </optgroup>
+                                    <optgroup label="Outdoors">
+                                        <option value="football">
+                                            Football
+                                        </option>
+                                        <option value="swimming">
+                                            Swimming
+                                        </option>
+                                        <option value="fishing">Fishing</option>
+                                        <option value="climbing">
+                                            Climbing
+                                        </option>
+                                        <option value="cycling">Cycling</option>
+                                        <option value="other_outdoor">
+                                            Other
+                                        </option>
+                                    </optgroup>
+                                </select>
+
+
+
+                                <form action="post" className="order-form">
+                    <label
+                        htmlFor="patient_first_name"
+                        className="order-form-label"
+                    >
+                        First Name:
+                        <input
+                            type="text"
+                            name="patient_first_name"
+                            required
+                            onChange={(event) => {
+                                setModelNumber(event.target.value);
+                            }}
+                        />
+                    </label>
+
+                    <label
+                        htmlFor="patient_last_name"
+                        className="order-form-label"
+                    >
+                        Last Name:
+                        <input
+                            type="text"
+                            name="patient_last_name"
+                            required
+                            onChange={(event) => {
+                                setCustomerId(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <label htmlFor="physicians_id" className="order-form-label">
+                        Physician ID:
+                        <input
+                            type="number"
+                            name="physicians_id "
+                            required
+                            onChange={(event) => {
+                                setQuantity(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <label
+                        htmlFor="appointment_date"
+                        className="order-form-label"
+                    >
+                        Appointment Date:
+                        <input
+                            type="text"
+                            name="appointment_date"
+                            required
+                            onChange={(event) => {
+                                setPrice(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <label htmlFor="insurance" className="order-form-label">
+                        Name Of Insurance:
+                        <input
+                            type="text"
+                            name="insurance"
+                            required
+                            onChange={(event) => {
+                                setOrderDate(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <label htmlFor="telephone" className="order-form-label">
+                        Telephone:
+                        <input
+                            type="text"
+                            name="telephone"
+                            required
+                            onChange={(event) => {
+                                setModelNumber(event.target.value);
+                            }}
+                        />
+                    </label>
+
+                    <label htmlFor="heght" className="order-form-label">
+                        Height (inch)
+                        <input
+                            type="number"
+                            name="height"
+                            required
+                            onChange={(event) => {
+                                setQuantity(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <label htmlFor="weight" className="order-form-label">
+                        Weight:
+                        <input
+                            type="number"
+                            name="weight"
+                            required
+                            onChange={(event) => {
+                                setPrice(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <label
+                        htmlFor="comments"
+                        className="order-form-label message"
+                    >
+                        Message To Doctor:
+                        <input
+                            type="text"
+                            name="comments"
+                            required
+                            onChange={(event) => {
+                                setCustomerId(event.target.value);
+                            }}
+                        />
+                    </label>
+                    <button className="order-form-button" onClick={displayInfo}>
+                        Submit
+                    </button>
+                </form>

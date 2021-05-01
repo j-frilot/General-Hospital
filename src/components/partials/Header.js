@@ -27,13 +27,23 @@ const Header = () => {
                 </div>
 
                 <div className="nav-bar">
-                    <NavLink to="/physicians">Physicians</NavLink>
+                    <NavLink to="/physicians" className="nav-item">
+                        Physicians
+                    </NavLink>
 
-                    <NavLink to="/covid">COVID</NavLink>
+                    <NavLink to="/covid" className="nav-item">
+                        COVID
+                    </NavLink>
 
-                    <NavLink to="">Appointments</NavLink>
-                    <NavLink to="/physicians">Find a Doctor</NavLink>
-                    <NavLink to="/">Appointments</NavLink>
+                    <NavLink to="/appointment" className="nav-item">
+                        Appointments
+                    </NavLink>
+                    <NavLink to="/physicians" className="nav-item">
+                        Find a Doctor
+                    </NavLink>
+                    <NavLink to="/appointment" className="nav-item">
+                        Appointments
+                    </NavLink>
                 </div>
             </div>
         </header>

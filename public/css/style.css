@@ -49,17 +49,17 @@ h3 {
 }
 
 .btn {
-    background-color: #0d2818;
     padding: 5px 20px;
     outline: none;
     border: none;
     color: #eee;
+    background-color: #0d2818;
 }
 
 .bold {
+    margin: auto;
     font-weight: 900;
     text-decoration: underline;
-    margin: auto;
 }
 
 .hr {
@@ -77,7 +77,7 @@ h3 {
 
 /* ...........HEADER......... */
 header {
-    background-color: #333;
+    background-color: #01264d;
 }
 
 .covid-alert {
@@ -85,13 +85,14 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: #eee;
     text-align: center;
+    text-decoration: underline;
+    background-color: #eee;
 }
 
 .covid-alert h1 {
-    font-size: 20px;
     padding-right: 5px;
+    font-size: 20px;
 }
 
 .covid-alert p {
@@ -106,16 +107,18 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 20px;
+    margin: 20px 0;
+    /* padding-top: 20px; */
 }
 
 .logo-row h1 {
     padding-left: 15px;
     margin: 0 15px;
-    color: #eee;
+
     font-size: 45px;
     text-transform: uppercase;
     text-decoration: underline;
+    color: #eee;
     border-left: solid 3px;
 }
 
@@ -129,19 +132,58 @@ header {
 }
 
 .nav-bar {
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    color: #eee;
+    padding: 10px;
     text-transform: uppercase;
     font-weight: bold;
+    color: #eee;
+    background-color: #184981;
+    border-radius: 5px;
+}
+
+.nav-bar .nav-item {
+    padding: 0px 10px;
+    border-left: solid 1px #eee;
+    border-right: solid 1px #eee;
+    background-color: #184981;
 }
 
 /* ...........INDEX BANNER......... */
 .index-banner {
     background-image: url("/images/banner-1.jpg");
 }
+
+.slide-show {
+    height: 400px;
+    background-image: url("/images/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    filter: sepia(1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.slide-show .first-slide,
+.slide-show .second-slide,
+.slide-show .third-slide {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.slide-show .first-slide h2,
+.slide-show .second-slide h2,
+.slide-show .third-slide h2 {
+    font-size: 4rem;
+    padding: 0;
+}
+
 /* ...........DASHBOARD......... */
 
 .dashboard {
@@ -171,11 +213,11 @@ header {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
+    justify-content: center;
 }
 
 .specialties-grid-item {
     padding: 15px;
-    font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -353,4 +395,113 @@ header {
     margin: auto;
     text-align: center;
     font-size: 16px;
+}
+
+/* =====================================*/
+/* =============APPOINTMENT=============*/
+/* =====================================*/
+
+.form-container {
+    max-width: 500px;
+    padding: 10px 20px;
+    color: #fff;
+    margin: 10px auto;
+    padding: 20px;
+    background: #184981;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-container fieldset {
+    border: none;
+}
+.form-container legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="datetime"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="search"],
+.form-container input[type="time"],
+.form-container input[type="url"],
+.form-container textarea,
+.form-container select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="datetime"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="search"]:focus,
+.form-container input[type="time"]:focus,
+.form-container input[type="url"]:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+    background: #d2d9dd;
+}
+.form-container select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+.form-container .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-container input[type="submit"],
+.form-container input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #fff;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.form-container input[type="submit"]:hover,
+.form-container input[type="button"]:hover {
+    background: #109177;
+}
+
+.not-mine {
+    display: flex;
+    justify-content: space-between;
 }

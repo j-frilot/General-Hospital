@@ -1,69 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import SpecialtiesList from "../sections/SpecialtyList";
 
 const Home = () => {
-    // const specialtyPhysicians = [
-    //     {
-    //         id: 1,
-    //         first_name: "clara",
-    //         last_name: "burke",
-    //         specialty: "maternal, fetal medicine",
-    //         img: "../images/face-9.jpg",
-    //         gender: "female"
-    //     },
-    //     {
-    //         id: 2,
-    //         first_name: "geneva",
-    //         last_name: "curtis",
-    //         specialty: "cardiology",
-    //         img: "../images/face-10.jpg",
-    //         gender: "female"
-    //     },
-    //     {
-    //         id: 3,
-    //         first_name: "meghan",
-    //         last_name: "brewer",
-    //         specialty: "gastroenterology",
-    //         img: "../images/face-11.jpg",
-    //         gender: "female"
-    //     },
-    //     {
-    //         id: 4,
-    //         first_name: "vernon",
-    //         last_name: "owens",
-    //         specialty: "family medicine",
-    //         img: "../images/face-12.jpg",
-    //         gender: "male"
-    //     },
-    //     {
-    //         id: 5,
-    //         first_name: "lynne",
-    //         last_name: "green",
-    //         specialty: "pediatrics",
-    //         img: "../images/face-13.jpg",
-    //         gender: "female"
-    //     },
-    //     {
-    //         id: 6,
-    //         first_name: "heather",
-    //         last_name: "sherman",
-    //         specialty: "internal medicine",
-    //         img: "../images/face-14.jpg",
-    //         gender: "female"
-    //     }
-    // ];
-
-    // let specialtiesGrid = document.querySelector(".specialties-grid");
-
-    // let specialtiesMap = specialtyPhysicians.map((specialty) => {
-    //     return `<div class="specialties-grid-item">
-    //                 <img src="${specialty.img}" alt="physician-photo" class="physician-img">
-    //                 <p>${specialty.specialty}</p>
-    //             </div>`;
-    // });
-    // specialtiesMap = specialtiesMap.join("");
-    // specialtiesGrid.innerHTML = specialtiesMap;
-
     return (
         <main className="container">
             <section className="banner index-banner"></section>
@@ -104,7 +43,9 @@ const Home = () => {
                     <div className="dashboard-card-header">
                         <h3>
                             <i className="fas fa-user-md icon"></i>
-                            <NavLink to="/">Appointments</NavLink>
+                            <NavLink to="/physicians/appointment">
+                                Appointments
+                            </NavLink>
                         </h3>
                     </div>
                     <div className="dashboard-card-body">
@@ -130,14 +71,9 @@ const Home = () => {
                 </div>
             </section>
             <hr className="hr" />
-            <section className="specialties">
-                <h2>Our Specialties</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Mollitia, totam.
-                </p>
-                <div className="specialties-grid"></div>
-            </section>
+
+            <SpecialtiesList />
+
             <hr className="hr" />
         </main>
     );
