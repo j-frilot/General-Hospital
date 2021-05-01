@@ -41,7 +41,7 @@ const Appointment = () => {
     };
 
     return (
-        <>
+        <div>
             <main className="container form-container">
                 <div className="form-container">
                     <form>
@@ -160,7 +160,7 @@ const Appointment = () => {
                     </form>
                 </div>
             </main>
-        </>
+        </div>
     );
 };
 
