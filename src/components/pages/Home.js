@@ -1,11 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import SpecialtiesList from "../sections/SpecialtyList";
+import Slider from "../sections/Slider";
 
 const Home = () => {
     return (
         <main className="container">
             <section className="banner index-banner"></section>
+
             <section className="dashboard">
                 <div className="dashboard-card">
                     <div className="dashboard-card-header">

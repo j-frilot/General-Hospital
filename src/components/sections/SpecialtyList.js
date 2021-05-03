@@ -6,7 +6,6 @@ const SpecialtyList = () => {
         fetch("http://localhost:4000/api/physicians")
             .then((response) => response.json())
             .then((response) => {
-                console.log(response);
                 setSpecialties(response);
             });
     }, []);

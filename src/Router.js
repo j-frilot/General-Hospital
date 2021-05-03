@@ -5,6 +5,7 @@ import Physicians from "./components/pages/Physicians";
 import Covid from "./components/pages/Covid";
 import Doctor from "./components/pages/Doctor";
 import Appointment from "./components/pages/Appointment";
+import Slider from "./components/sections/Slider";
 
 const Router = () => {
     return (
@@ -14,6 +15,7 @@ const Router = () => {
             <Route exact path="/covid" component={Covid} />
             <Route exact path="/physicians/:id" component={Doctor} />
             <Route exact path="/appointment" component={Appointment} />
+            <Route exact path="/slider" component={Slider} />
         </Switch>
     );
 };

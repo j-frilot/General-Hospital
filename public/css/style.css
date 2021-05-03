@@ -1,3 +1,7 @@
+:root {
+    --main-color: #01264d;
+    --accent-color: #184981;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -53,7 +57,7 @@ h3 {
     outline: none;
     border: none;
     color: #eee;
-    background-color: #0d2818;
+    background-color: var(--main-color)
 }
 
 .bold {
@@ -64,7 +68,7 @@ h3 {
 
 .hr {
     margin: 30px 0;
-    border: solid 1px #0d2818;
+    border: solid 1px var(--main-color)
 }
 
 .banner {
@@ -77,7 +81,7 @@ h3 {
 
 /* ...........HEADER......... */
 header {
-    background-color: #01264d;
+    background-color: var(--main-color)
 }
 
 .covid-alert {
@@ -195,12 +199,12 @@ header {
 
 .dashboard .dashboard-card {
     padding: 15px;
-    border: solid 2px #0d2818;
+    border: solid 2px var(--main-color);
 }
 .dashboard-card-header {
     padding: 5px 0;
     color: #eee;
-    background: #0d2818;
+    background: var(--accent-color);
 }
 
 .dashboard-card-body {
@@ -236,7 +240,7 @@ header {
 }
 
 .footer-grid-item {
-    border: solid 1px #0d2818;
+    border: solid 1px var(--main-color)
 }
 
 .copy-right {
@@ -289,7 +293,7 @@ header {
 
 .directory-grid form {
     padding: 10px;
-    color: #0d2818;
+    color: var(--main-color)
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -325,19 +329,19 @@ header {
     text-align: center;
     font-size: 16px;
     text-transform: capitalize;
-    border: solid 1px #0d2818;
+    border: solid 1px var(--main-color)
 }
 
 .directory-grid .results-grid .result img {
     filter: sepia(0.9);
     max-width: 50%;
-    border: solid 1px #0d2818;
+    border: solid 1px var(--main-color)
 }
 
 .directory-grid .results-grid .result .bg {
     padding: 2px 6px;
     color: #eee;
-    background: #0d2818;
+    background: var(--main-color)
 }
 
 .search {
@@ -403,21 +407,20 @@ header {
 
 .form-container {
     max-width: 500px;
-    padding: 10px 20px;
-    color: #fff;
+    border-radius: 8px;
     margin: 10px auto;
     padding: 20px;
-    background: #184981;
-    border-radius: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #eee;
+    background: var(--main-color);
 }
 .form-container fieldset {
     border: none;
 }
 .form-container legend {
-    font-size: 1.4em;
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
+
 .form-container label {
     display: block;
     margin-bottom: 8px;
@@ -429,17 +432,14 @@ header {
 .form-container input[type="tel"],
 .form-container textarea,
 .form-container select {
+    width: 100%;
     border: none;
     border-radius: 4px;
-    font-size: 15px;
-    margin: 0;
-    outline: 0;
+    margin: 0 0 30px 0;
     padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    margin-bottom: 30px;
+    font-size: 15px;
+    outline: 0;
+    color: var(--accent-color);
 }
 .form-container input[type="text"]:focus,
 .form-container input[type="date"]:focus,
@@ -452,44 +452,27 @@ header {
 .form-container input[type="tel"]:focus,
 .form-container textarea:focus,
 .form-container select:focus {
-    background: #d2d9dd;
-}
-.form-container select {
-    -webkit-appearance: menulist-button;
-    height: 35px;
-    text-transform: capitalize;
-}
-.form-container .number {
-    background: #1abc9c;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 15px 15px 15px 0px;
+    background: #ddd;
 }
 
 .form-container input[type="submit"],
 .form-container input[type="button"] {
     position: relative;
     display: block;
+    width: 100%;
+    border:none;
+    margin: auto 10px auto 0;
     padding: 19px 39px 18px 39px;
-    color: #fff;
-    margin: 0 auto;
-    background: #1abc9c;
     font-size: 18px;
     text-align: center;
-    font-style: normal;
-    width: 100%;
-    border: 1px solid #16a085;
-    border-width: 1px 1px 3px;
-    margin-bottom: 10px;
+    color: #eee;
+    background: var(--accent-color);
+    
+    
 }
 .form-container input[type="submit"]:hover,
 .form-container input[type="button"]:hover {
-    background: #109177;
+   
+    background: var(--accent-color);
+    cursor: pointer;
 }
