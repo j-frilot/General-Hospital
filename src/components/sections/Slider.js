@@ -7,7 +7,6 @@ const Slider = (props) => {
         "/images/banner-2.jpg",
         "/images/banner-3.jpg"
     ];
-
     useEffect(() => {
         setTimeout(() => {
             if (currentSlide >= slides.length - 1) {
@@ -16,7 +15,6 @@ const Slider = (props) => {
             } else setCurrentSlide(currentSlide + 1);
         }, 3000);
     });
-
     return (
         <>
             <section className="banner index-banner">

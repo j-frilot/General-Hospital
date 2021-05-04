@@ -63,167 +63,59 @@
 -- | comments           | text        | YES  |     | NULL    |                |
 -- | height             | smallint    | YES  |     | NULL    |                |
 -- | weight    
+// <section className="dashboard">
+    //     <div className="dashboard-card">
+    //         <div className="dashboard-card-header">
+    //             <h3>
+    //                 <i className="fas fa-user-md icon"></i>{" "}
+    //                 <NavLink to="/physicians"> Find A Doctor</NavLink>
+    //             </h3>
+    //         </div>
+    //         <div className="dashboard-card-body">
+    //             Find the doctor who’s right for you. We are staffed by the
+    //             nation’s top physicians.
+    //         </div>
+    //     </div>
 
-<input
-                                type="number"
-                                name="physicians_id "
-                                required
-                                placeholder="Doctor Id *"
-                                onChange={(event) => {
-                                    setPhysiciansId(event.target.value);
-                                }}
-                            />
+    //     <div className="dashboard-card">
+    //         <div className="dashboard-card-header">
+    //             <h3>
+    //                 <i className="fas fa-user-md icon"></i>
+    //                 <NavLink to="/covid"> COVID-19</NavLink>
+    //             </h3>
+    //         </div>
+    //         <div className="dashboard-card-body">
+    //             <p>COVID-19 vaccinations for are available at no cost.</p>{" "}
+    //             <p>
+    //                 The General Hospital will allow one visitor per day for
+    //                 inpatients and those in our Emergency Department.
+    //             </p>
+    //         </div>
+    //     </div>
 
-<label for="job">Interests:</label>
-                                <select id="job" name="field4">
-                                    <optgroup label="Indoors">
-                                        <option value="fishkeeping">
-                                            Fishkeeping
-                                        </option>
-                                        <option value="reading">Reading</option>
-                                        <option value="boxing">Boxing</option>
-                                        <option value="debate">Debate</option>
-                                        <option value="gaming">Gaming</option>
-                                        <option value="snooker">Snooker</option>
-                                        <option value="other_indoor">
-                                            Other
-                                        </option>
-                                    </optgroup>
-                                    <optgroup label="Outdoors">
-                                        <option value="football">
-                                            Football
-                                        </option>
-                                        <option value="swimming">
-                                            Swimming
-                                        </option>
-                                        <option value="fishing">Fishing</option>
-                                        <option value="climbing">
-                                            Climbing
-                                        </option>
-                                        <option value="cycling">Cycling</option>
-                                        <option value="other_outdoor">
-                                            Other
-                                        </option>
-                                    </optgroup>
-                                </select>
-
-
-
-                                <form action="post" className="order-form">
-                    <label
-                        htmlFor="patient_first_name"
-                        className="order-form-label"
-                    >
-                        First Name:
-                        <input
-                            type="text"
-                            name="patient_first_name"
-                            required
-                            onChange={(event) => {
-                                setModelNumber(event.target.value);
-                            }}
-                        />
-                    </label>
-
-                    <label
-                        htmlFor="patient_last_name"
-                        className="order-form-label"
-                    >
-                        Last Name:
-                        <input
-                            type="text"
-                            name="patient_last_name"
-                            required
-                            onChange={(event) => {
-                                setCustomerId(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <label htmlFor="physicians_id" className="order-form-label">
-                        Physician ID:
-                        <input
-                            type="number"
-                            name="physicians_id "
-                            required
-                            onChange={(event) => {
-                                setQuantity(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <label
-                        htmlFor="appointment_date"
-                        className="order-form-label"
-                    >
-                        Appointment Date:
-                        <input
-                            type="text"
-                            name="appointment_date"
-                            required
-                            onChange={(event) => {
-                                setPrice(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <label htmlFor="insurance" className="order-form-label">
-                        Name Of Insurance:
-                        <input
-                            type="text"
-                            name="insurance"
-                            required
-                            onChange={(event) => {
-                                setOrderDate(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <label htmlFor="telephone" className="order-form-label">
-                        Telephone:
-                        <input
-                            type="text"
-                            name="telephone"
-                            required
-                            onChange={(event) => {
-                                setModelNumber(event.target.value);
-                            }}
-                        />
-                    </label>
-
-                    <label htmlFor="heght" className="order-form-label">
-                        Height (inch)
-                        <input
-                            type="number"
-                            name="height"
-                            required
-                            onChange={(event) => {
-                                setQuantity(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <label htmlFor="weight" className="order-form-label">
-                        Weight:
-                        <input
-                            type="number"
-                            name="weight"
-                            required
-                            onChange={(event) => {
-                                setPrice(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <label
-                        htmlFor="comments"
-                        className="order-form-label message"
-                    >
-                        Message To Doctor:
-                        <input
-                            type="text"
-                            name="comments"
-                            required
-                            onChange={(event) => {
-                                setCustomerId(event.target.value);
-                            }}
-                        />
-                    </label>
-                    <button className="order-form-button" onClick={displayInfo}>
-                        Submit
-                    </button>
-                </form>
+    //     <div className="dashboard-card">
+    //         <div className="dashboard-card-header">
+    //             <h3>
+    //                 <i className="fas fa-user-md icon"></i>
+    //                 <NavLink to="/physicians/appointment">Appointments</NavLink>
+    //             </h3>
+    //         </div>
+    //         <div className="dashboard-card-body">
+    //             Find the doctor who’s right for you. Grady is staffed by the
+    //             nation’s top physicians, including Grady employed physicians and
+    //             faculty from Emory and Morehouse schools of medicine.
+    //         </div>
+    //     </div>
+    //     <div className="dashboard-card">
+    //         <div className="dashboard-card-header">
+    //             <h3>
+    //                 <i className="fas fa-user-md icon"></i> Find A Doctor
+    //             </h3>
+    //         </div>
+    //         <div className="dashboard-card-body">
+    //             Find the doctor who’s right for you. Grady is staffed by the
+    //             nation’s top physicians, including Grady employed physicians and
+    //             faculty from Emory and Morehouse schools of medicine.
+    //         </div>
+    //     </div>
+    // </section>;

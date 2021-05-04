@@ -12,7 +12,9 @@ const Appointment = () => {
     const [height, setHeight] = useState("");
     const [weight, setWeight] = useState("");
 
-    const displayInfo = () => {
+    const displayInfo = (event) => {
+        event.preventDefault();
+
         console.log(
             patient_first_name,
             patient_last_name,
@@ -44,7 +46,7 @@ const Appointment = () => {
         <div>
             <main className="container form-container">
                 <div className="form-container">
-                    <form>
+                    <form onSubmit={displayInfo}>
                         <fieldset>
                             <legend>Schedule An Appointment</legend>
                             <input
@@ -155,7 +157,7 @@ const Appointment = () => {
                         <input
                             type="submit"
                             value="Apply"
-                            onClick={displayInfo}
+                            // onClick={displayInfo}
                         />
                     </form>
                 </div>
