@@ -119,3 +119,27 @@
     //         </div>
     //     </div>
     // </section>;
+
+    -- dashboard
+
+-- +------------+-------------+------+-----+---------+----------------+
+-- | Field      | Type        | Null | Key | Default | Extra          |
+-- +------------+-------------+------+-----+---------+----------------+
+-- | section_id | tinyint     | NO   | PRI | NULL    | auto_increment |
+-- | heading    | varchar(30) | NO   |     | NULL    |                |
+-- | body       | text        | NO   |     | NULL    |                |
+-- +------------+-------------+------+-----+---------+----------------+
+
+-- DROP TABLE dashboard;
+
+-- CREATE TABLE dashboard(
+--     section_id TINYINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+--     heading VARCHAR(30) NOT NULL,
+--     body TEXT NOT NULL
+-- );
+
+-- INSERT INTO dashboard (heading, body)
+-- VALUES  ('find a doctor', 'Find the doctor who’s right for you. We are staffed by the nation’s top physicians.'),
+--         ('COVID-19'     , 'COVID-19 vaccinations for are available at no cost. The General Hospital will allow one visitor per day for inpatients and those in our Emergency Department.'),
+--         ('appointments' , "Find the doctor who’s right for you. The General is staffed by the nation's top physicians."),
+--         ('find a doctor', "Find the doctor who’s right for you. We are staffed by the nation's top physicians.");

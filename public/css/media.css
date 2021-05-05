@@ -6,9 +6,6 @@
     .specialties-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .banner-container {
-        height: 300px;
-    }
 }
 
 /* when get to 768 and smaller */
@@ -24,11 +21,6 @@
     }
     .header-content {
         padding: 0;
-    }
-    .index-banner,
-    .banner-container,
-    .covid-banner {
-        height: 300px;
     }
     .dashboard {
         grid-template-columns: 1fr;
@@ -69,8 +61,6 @@
     .nav-bar {
         padding: 10px;
     }
-    .index-banner,
-    .banner-container,
     .covid-banner {
         height: 200px;
     }

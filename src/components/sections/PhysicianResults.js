@@ -14,31 +14,34 @@ const PhysicianResults = () => {
     }, []);
 
     return (
-        <>
+        <ul>
             {searchResults.map((result) => (
-                <div
-                    className="results-grid-item result"
-                    key={result.physicians_id}
-                >
-                    <NavLink to={`/physicians/${result.physicians_id}`}>
-                        <img
-                            src={`images/${result.photo}`}
-                            alt="physician"
-                            className="physician-img"
-                        />
+                <li className="results-item" key={result.physicians_id}>
+                    <NavLink
+                        className="results-item-flex"
+                        to={`/physicians/${result.physicians_id}`}
+                    >
+                        <div className="results-item-img">
+                            <img
+                                src={`images/${result.photo}`}
+                                alt="physician"
+                                className="physician-img"
+                            />
+                        </div>
+                        <div className="results-item-info ">
+                            <span className="info-heading">
+                                {result.first_name} {result.last_name}
+                            </span>
+
+                            <span className="info-body">
+                                <p>{result.specialty}</p>
+                                <p className="bg">Request An Appointment</p>
+                            </span>
+                        </div>
                     </NavLink>
-                    <NavLink to={`/physicians/${result.physicians_id}`}>
-                        <h3>
-                            {result.first_name} {result.last_name}
-                        </h3>
-                    </NavLink>
-                    <NavLink to={`/physicians/${result.physicians_id}`}>
-                        <h4>{result.specialty}</h4>
-                        <h4 className="bg">Request An Appointment</h4>
-                    </NavLink>
-                </div>
+                </li>
             ))}
-        </>
+        </ul>
     );
 };
 

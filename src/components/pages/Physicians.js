@@ -13,7 +13,7 @@ const Physicians = (props) => {
             </section>
             <hr className="hr" />
 
-            <section className="directory directory-grid">
+            <section className="directory">
                 <div className="search">
                     <h3>Filter Results</h3>
                     <form
@@ -216,9 +216,7 @@ const Physicians = (props) => {
                             Z
                         </a>
                     </div>
-                    <div className="results-grid">
-                        <PhysicianResults />
-                    </div>
+                    <PhysicianResults />
                 </div>
             </section>
         </main>

@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.8;
@@ -57,7 +57,7 @@ h3 {
     outline: none;
     border: none;
     color: #eee;
-    background-color: var(--main-color)
+    background-color: var(--main-color);
 }
 
 .bold {
@@ -67,21 +67,13 @@ h3 {
 }
 
 .hr {
-    margin: 30px 0;
-    border: solid 1px var(--main-color)
-}
-
-.banner {
-    margin: 30px 0;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    margin: 20px 0;
+    border: solid 1px var(--main-color);
 }
 
 /* ...........HEADER......... */
 header {
-    background-color: var(--main-color)
+    background-color: var(--main-color);
 }
 
 .covid-alert {
@@ -154,41 +146,9 @@ header {
     background-color: #184981;
 }
 
-/* ...........INDEX BANNER......... */
-.index-banner {
-    background-image: url("/images/banner-1.jpg");
-}
-
-.slide-show {
-    height: 400px;
-    background-image: url("/images/banner-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(1);
-    filter: sepia(1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-.slide-show .first-slide,
-.slide-show .second-slide,
-.slide-show .third-slide {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-}
-.slide-show .first-slide h2,
-.slide-show .second-slide h2,
-.slide-show .third-slide h2 {
-    font-size: 4rem;
-    padding: 0;
-}
-
+/* ----------------------------- */
 /* ...........DASHBOARD......... */
+/* ----------------------------- */
 
 .dashboard {
     display: grid;
@@ -201,8 +161,9 @@ header {
     padding: 15px;
     border: solid 2px var(--main-color);
 }
-.dashboard-card-header {
+.dashboard-card-heading {
     padding: 5px 0;
+    text-transform: capitalize;
     color: #eee;
     background: var(--accent-color);
 }
@@ -210,8 +171,9 @@ header {
 .dashboard-card-body {
     padding-top: 10px;
 }
-
+/* ------------------------------- */
 /* ...........Specialties......... */
+/* ------------------------------- */
 
 .specialties-grid {
     display: grid;
@@ -230,7 +192,10 @@ header {
 .specialties-grid-item img {
     width: 125px;
 }
-/* ...........Footer......... */
+
+/* ========================== */
+/* ========= FOOTER ========= */
+/* ========================== */
 
 .footer-grid {
     display: grid;
@@ -240,19 +205,32 @@ header {
 }
 
 .footer-grid-item {
-    border: solid 1px var(--main-color)
+    border: solid 1px var(--main-color);
 }
 
 .copy-right {
     text-align: center;
     margin: 30px 0;
 }
-
 /* ===================================*/
-/* =============PHYSICIANS============*/
+/* ============== SLIDER =============*/
+/* ================================== */
+.slide-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 600px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* ===================================*/
+/* ============ PHYSICIANS ===========*/
 /* ===================================*/
 
-/* =============PHYSICIANSS BANNER===========*/
+/* ---------------Banner------------- */
 .banner-container {
     position: relative;
     height: 400px;
@@ -278,72 +256,79 @@ header {
     font-weight: bold;
 }
 
-.directory-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
+.directory {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.directory-grid .alphabet {
+.directory .results {
+    flex-grow: 1;
+}
+/* ----form start------- */
+.directory form {
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--main-color);
+}
+
+.directory form input {
+    padding: 5px 2px;
+}
+
+.directory form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.directory form .form-group {
+    margin: auto;
+    padding: 15px 0;
+}
+/* -----------form end-------- */
+.directory .alphabet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 16px;
 }
-
-.directory-grid form {
-    padding: 10px;
-    color: var(--main-color)
+.directory .results-item {
+    margin: 40px;
+    border: 1px solid var(--main-color);
+}
+.directory .results-item-flex {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.directory-grid form input {
-    padding: 5px 2px;
-}
-
-.directory-grid form label {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.directory-grid form .form-group {
-    /* display: block; */
-    /* flex-direction: column; */
-    margin: auto;
-    padding: 15px 0;
-}
-
-.directory-grid .results-grid {
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.directory-grid .results-grid .result {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.directory .results-item-img {
     text-align: center;
-    font-size: 16px;
+    flex-grow: 1;
+    display: block;
+}
+.directory .results-item-img img {
+    width: auto;
+    height: 300px;
+    vertical-align: middle;
+}
+
+.directory .results-item-info {
+    flex-grow: 100;
+    padding: 40px 48px 0;
+
+    font-family: granjon;
     text-transform: capitalize;
-    border: solid 1px var(--main-color)
+    color: var(--accent-color);
 }
 
-.directory-grid .results-grid .result img {
-    filter: sepia(0.9);
-    max-width: 50%;
-    border: solid 1px var(--main-color)
+.directory .results-item-info .info-heading {
+    font-size: 32px;
 }
-
-.directory-grid .results-grid .result .bg {
-    padding: 2px 6px;
-    color: #eee;
-    background: var(--main-color)
+.directory .results-item-info {
+    font-size: 24px;
 }
-
 .search {
     text-align: center;
 }
@@ -460,19 +445,16 @@ header {
     position: relative;
     display: block;
     width: 100%;
-    border:none;
+    border: none;
     margin: auto 10px auto 0;
     padding: 19px 39px 18px 39px;
     font-size: 18px;
     text-align: center;
     color: #eee;
     background: var(--accent-color);
-    
-    
 }
 .form-container input[type="submit"]:hover,
 .form-container input[type="button"]:hover {
-   
     background: var(--accent-color);
     cursor: pointer;
 }

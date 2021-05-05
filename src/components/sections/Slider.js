@@ -17,8 +17,13 @@ const Slider = (props) => {
     });
     return (
         <>
-            <section className="banner index-banner">
-                <img src={slides[currentSlide]} alt="" />;
+            <section className="slide-show">
+                <img
+                    src={slides[currentSlide]}
+                    alt="slide"
+                    className="slide-show"
+                />
+                ;
             </section>
         </>
     );
