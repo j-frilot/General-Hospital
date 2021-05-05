@@ -12,7 +12,7 @@ const Dashboard = () => {
             });
     }, []);
     return (
-        <section className="dashboard dashboard-card">
+        <section className="dashboard dashboard-card container">
             {dashboard.map((dash) => (
                 <div key={dash.section_id} className="dashboard-card">
                     <div className="dashboard-card-heading">

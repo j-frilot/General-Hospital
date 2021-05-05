@@ -3,17 +3,15 @@ import PhysicianResults from "../sections/PhysicianResults";
 
 const Physicians = (props) => {
     return (
-        <main className="container">
+        <main>
             <section className="banner-container">
-                <div className="banner physicians-banner"></div>
-                <div className="physicians-banner-body">
+                <div className="hero-content">
                     <h2>Find A Doctor</h2>
-                    <hr />
                 </div>
             </section>
             <hr className="hr" />
 
-            <section className="directory">
+            <section className="directory container">
                 <div className="search">
                     <h3>Filter Results</h3>
                     <form

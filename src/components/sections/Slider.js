@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 
 const Slider = (props) => {
     const [currentSlide, setCurrentSlide] = useState(0);
+
     let slides = [
-        "/images/banner-1.jpg",
-        "/images/banner-2.jpg",
-        "/images/banner-3.jpg"
+        "/images/coronavirus.jpg",
+        "/images/banner-4.jpg",
+        "/images/banner-5.jpg"
     ];
     useEffect(() => {
         setTimeout(() => {
@@ -16,16 +17,14 @@ const Slider = (props) => {
         }, 3000);
     });
     return (
-        <>
-            <section className="slide-show">
-                <img
-                    src={slides[currentSlide]}
-                    alt="slide"
-                    className="slide-show"
-                />
-                ;
-            </section>
-        </>
+        <section className="slide-show">
+            <img
+                src={slides[currentSlide]}
+                alt="slide"
+                className="slide-show-img"
+            />
+            ;
+        </section>
     );
 };
 

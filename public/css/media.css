@@ -1,10 +1,38 @@
 /* when get to 992 and smaller */
 @media (max-width: 992px) {
+    .hero,
+    .banner-container {
+        height: 450px;
+    }
+
     .dashboard {
         grid-template-columns: repeat(2, 1fr);
     }
     .specialties-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .covid-banner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.875rem;
+        height: auto;
+        width: 100vw;
+        margin-left: -15px;
+    }
+    .covid-banner .covid-banner-text {
+        width: 100%;
+        padding: 2.0625rem 1.5rem;
+        background-color: #efefef;
+        order: 2;
+        display: flex;
+    }
+
+    .covid-banner .covid-banner-asset {
+        width: 100%;
+        height: 160px;
+        position: relative;
+        order: 1;
+        z-index: 5;
     }
 }
 
@@ -22,6 +50,10 @@
     .header-content {
         padding: 0;
     }
+    .hero,
+    .banner-container {
+        height: 350px;
+    }
     .dashboard {
         grid-template-columns: 1fr;
     }
@@ -34,17 +66,14 @@
     .physicianss-banner-body h2 {
         font-size: 2.5rem;
     }
-    .directory-grid .results-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .directory .results-item-flex {
+        display: block;
     }
-
-    /* .doctor-top-row-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-transform: capitalize;
-    }*/
-
+    .directory .results-item-info {
+        max-width: 300px;
+        padding: 16px;
+        margin: 0 auto;
+    }
     .top-row-info-item h3 {
         font-size: 18px;
     }
@@ -57,6 +86,10 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    .logo-row h1 {
+        text-align: center;
+        border: initial;
+    }
 
     .nav-bar {
         padding: 10px;
@@ -64,28 +97,24 @@
     .covid-banner {
         height: 200px;
     }
-    .directory-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .hero,
+    .banner-container {
+        height: 250px;
     }
-    .directory-grid .results-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    /* .directory .results-item-img img {
+        height: 150px;
     }
-}
+    .directory .results-item-info .info-heading {
+        font-size: 26px;
+    }
+    .directory .results-item-info {
+        padding: 0px 48px;
+        font-size: 18px;
+        text-align: center;
+    } */
 
-@media (max-width: 600px) {
     .footer-grid {
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media (max-width: 600px) {
-    .logo-row h1 {
-        text-align: center;
-        border: initial;
     }
 }

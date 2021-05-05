@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="container">
-            <section className="footer-grid">
+        <footer>
+            <section className="footer-grid container">
                 <div className="footer-grid-item">
                     <h3>Contact Us</h3>
                     <ul className="contact-ul">
@@ -49,7 +49,7 @@ const Footer = () => {
             </section>
 
             <section className="copy-right">
-                &copy 2021 General Hospital Company. All Rights Reserved
+                © 2021 General Hospital Company. All Rights Reserved - josh
             </section>
         </footer>
     );

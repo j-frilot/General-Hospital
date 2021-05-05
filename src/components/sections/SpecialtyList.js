@@ -12,7 +12,7 @@ const SpecialtyList = () => {
 
     return (
         <>
-            <section className="specialties">
+            <section className="specialties container">
                 <h2>Our Specialties</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.

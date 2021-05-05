@@ -14,7 +14,7 @@ const PhysicianResults = () => {
     }, []);
 
     return (
-        <ul>
+        <ul className="results-ul">
             {searchResults.map((result) => (
                 <li className="results-item" key={result.physicians_id}>
                     <NavLink
@@ -30,7 +30,7 @@ const PhysicianResults = () => {
                         </div>
                         <div className="results-item-info ">
                             <span className="info-heading">
-                                {result.first_name} {result.last_name}
+                                {result.first_name} {result.last_name} M.D.
                             </span>
 
                             <span className="info-body">
