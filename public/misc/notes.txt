@@ -43,103 +43,21 @@
                     <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">
                         CDC's Guide To Mask
 
+///////////////////////////////////////
+//////////////////////////////////////
 
- useEffect(() => {
-      fetch("http://localhost:3030/api/pages/about")
-      .then(response => response.json())
-      .then(page => {
-          setPage(page);
-      });
-  }, []);
+API
+https://corona.lmao.ninja/v3/covid-19/states - all states/territories
+https://corona.lmao.ninja/v3/covid-19/states/mississippi  - mississippi
+https://corona.lmao.ninja/v3/covid-19/historical/usacounties/mississippi    -all counties mississippi
 
-       appointment_id     | tinyint     | NO   | PRI | NULL    | auto_increment |
--- | patient_id         | int         | YES  |     | NULL    |                |
--- | patient_first_name | varchar(30) | YES  |     | NULL    |                |
--- | patient_last_name  | varchar(30) | YES  |     | NULL    |                |
--- | physicians_id      | int         | YES  |     | NULL    |                |
--- | appointment_date   | date        | YES  |     | NULL    |                |
--- | insurance          | varchar(20) | YES  |     | NULL    |                |
--- | telephone          | varchar(15) | YES  |     | NULL    |                |
--- | comments           | text        | YES  |     | NULL    |                |
--- | height             | smallint    | YES  |     | NULL    |                |
--- | weight    
-// <section className="dashboard">
-    //     <div className="dashboard-card">
-    //         <div className="dashboard-card-header">
-    //             <h3>
-    //                 <i className="fas fa-user-md icon"></i>{" "}
-    //                 <NavLink to="/physicians"> Find A Doctor</NavLink>
-    //             </h3>
-    //         </div>
-    //         <div className="dashboard-card-body">
-    //             Find the doctor who’s right for you. We are staffed by the
-    //             nation’s top physicians.
-    //         </div>
-    //     </div>
 
-    //     <div className="dashboard-card">
-    //         <div className="dashboard-card-header">
-    //             <h3>
-    //                 <i className="fas fa-user-md icon"></i>
-    //                 <NavLink to="/covid"> COVID-19</NavLink>
-    //             </h3>
-    //         </div>
-    //         <div className="dashboard-card-body">
-    //             <p>COVID-19 vaccinations for are available at no cost.</p>{" "}
-    //             <p>
-    //                 The General Hospital will allow one visitor per day for
-    //                 inpatients and those in our Emergency Department.
-    //             </p>
-    //         </div>
-    //     </div>
-
-    //     <div className="dashboard-card">
-    //         <div className="dashboard-card-header">
-    //             <h3>
-    //                 <i className="fas fa-user-md icon"></i>
-    //                 <NavLink to="/physicians/appointment">Appointments</NavLink>
-    //             </h3>
-    //         </div>
-    //         <div className="dashboard-card-body">
-    //             Find the doctor who’s right for you. Grady is staffed by the
-    //             nation’s top physicians, including Grady employed physicians and
-    //             faculty from Emory and Morehouse schools of medicine.
-    //         </div>
-    //     </div>
-    //     <div className="dashboard-card">
-    //         <div className="dashboard-card-header">
-    //             <h3>
-    //                 <i className="fas fa-user-md icon"></i> Find A Doctor
-    //             </h3>
-    //         </div>
-    //         <div className="dashboard-card-body">
-    //             Find the doctor who’s right for you. Grady is staffed by the
-    //             nation’s top physicians, including Grady employed physicians and
-    //             faculty from Emory and Morehouse schools of medicine.
-    //         </div>
-    //     </div>
-    // </section>;
-
-    -- dashboard
-
--- +------------+-------------+------+-----+---------+----------------+
--- | Field      | Type        | Null | Key | Default | Extra          |
--- +------------+-------------+------+-----+---------+----------------+
--- | section_id | tinyint     | NO   | PRI | NULL    | auto_increment |
--- | heading    | varchar(30) | NO   |     | NULL    |                |
--- | body       | text        | NO   |     | NULL    |                |
--- +------------+-------------+------+-----+---------+----------------+
-
--- DROP TABLE dashboard;
-
--- CREATE TABLE dashboard(
---     section_id TINYINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
---     heading VARCHAR(30) NOT NULL,
---     body TEXT NOT NULL
--- );
-
--- INSERT INTO dashboard (heading, body)
--- VALUES  ('find a doctor', 'Find the doctor who’s right for you. We are staffed by the nation’s top physicians.'),
---         ('COVID-19'     , 'COVID-19 vaccinations for are available at no cost. The General Hospital will allow one visitor per day for inpatients and those in our Emergency Department.'),
---         ('appointments' , "Find the doctor who’s right for you. The General is staffed by the nation's top physicians."),
---         ('find a doctor', "Find the doctor who’s right for you. We are staffed by the nation's top physicians.");
+<h1>{covidContent[0].heading_one}</h1>
+                <ul>
+                    <li>
+                        <p>{covidContent[0].text_one}</p>
+                    </li>
+                    <li>
+                        <p>{covidContent[0].text_two}</p>
+                    </li>
+                </ul>

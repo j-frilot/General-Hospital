@@ -1,11 +1,14 @@
 import React from "react";
-import QandA from "../sections/QandA";
+import CovidStatBanner from "../sections/CovidStatBanner";
+
+import CovidContentCards from "../sections/CovidContentCards";
+
 const Covid = () => {
     return (
         <main className="container">
             <section className="covid-banner">
                 <div className="covid-banner-text">
-                    <h1>COVID-19 Safety Info</h1>
+                    <h1>COVID-19 In Mississippi</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Repudiandae ipsam ratione maiores.
@@ -15,7 +18,8 @@ const Covid = () => {
                     <div className="covid-banner-img"></div>
                 </div>
             </section>
-            <QandA />
+            <CovidStatBanner />
+            <CovidContentCards />
         </main>
     );
 };

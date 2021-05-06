@@ -1,6 +1,7 @@
 :root {
     --main-color: #01264d;
     --accent-color: #184981;
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 50%);
 }
 * {
     margin: 0px;
@@ -72,8 +73,10 @@ h3 {
     width: 85%;
     border: solid 1px var(--main-color);
 }
+/*==========================================*/
+/*=============== HEADER ===================*/
+/*==========================================*/
 
-/* ...........HEADER......... */
 header {
     background-color: var(--main-color);
 }
@@ -149,9 +152,9 @@ header {
     background-color: #184981;
 }
 
-/* ----------------------------- */
-/* .......... HOME HERO......... */
-/* ----------------------------- */
+/* -------------------------------------*/
+/* --------------- HOME HERO ---------- */
+/* ------------------------------------ */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("/images/banner-1.jpg");
@@ -168,9 +171,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* ----------------------------- */
-/* ...........DASHBOARD......... */
-/* ----------------------------- */
+/* ---------------------------------------*/
+/* ------------- DASHBOARD -------------- */
+/* -------------------------------------- */
 
 .dashboard {
     display: grid;
@@ -181,7 +184,8 @@ header {
 
 .dashboard .dashboard-card {
     padding: 15px;
-    border: solid 2px var(--main-color);
+
+    box-shadow: var(--shadow);
 }
 .dashboard-card-heading {
     padding: 5px 0;
@@ -193,11 +197,12 @@ header {
 .dashboard-card-body {
     padding-top: 10px;
 }
-/* ------------------------------- */
-/* ...........Specialties......... */
-/* ------------------------------- */
+/* ----------------------------------- */
+/* ------------- Specialties ----------*/
+/* ----------------------------------- */
 
 .specialties-grid {
+    margin: 10px 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
@@ -205,30 +210,40 @@ header {
 }
 
 .specialties-grid-item {
+    margin: 10px 0;
     padding: 15px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    box-shadow: var(--shadow);
 }
 
 .specialties-grid-item img {
     width: 125px;
 }
 
-/* ========================== */
-/* ========= FOOTER ========= */
-/* ========================== */
+/* ================================= */
+/* ============= FOOTER ============ */
+/* ================================= */
+
+footer {
+    background-color: var(--main-color);
+}
 
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    font-size: 16px;
+    color: #fff;
+    font-size: 13px;
 }
 
-.footer-grid-item {
-    border: solid 1px var(--main-color);
+.footer-grid .footer-grid-item h3 {
+    font-size: 22px;
 }
+/* .footer-grid-item {
+    border: solid 1px var(--main-color);
+} */
 
 .copy-right {
     background-color: #ddd;
@@ -237,9 +252,9 @@ header {
     width: 100%;
     text-align: center;
 }
-/* ===================================*/
-/* ============== SLIDER =============*/
-/* ================================== */
+/* --------------------------------------*/
+/* -------------- SLIDER ----------------*/
+/* --------------------------------------*/
 .slide-show {
     display: flex;
     /* flex-direction: column; */
@@ -256,9 +271,9 @@ header {
     height: 600px;
     width: 100%;
 }
-/* ===================================*/
-/* ============ PHYSICIANS ===========*/
-/* ===================================*/
+/* ===========================================*/
+/* ================= PHYSICIANS ==============*/
+/* ===========================================*/
 
 /* ---------------Banner------------- */
 .banner-container {
@@ -330,6 +345,7 @@ header {
 .directory .results-item {
     margin: 40px 0;
     display: list-item;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 50%);
 }
 .directory .results-item-flex {
     display: flex;
@@ -374,7 +390,6 @@ header {
     display: flex;
     width: 100%;
     height: 25rem;
-    margin: 25px 0;
 }
 
 .covid-banner .covid-banner-text {
@@ -390,7 +405,9 @@ header {
     height: 100%;
     order: 2;
 }
-
+/* --------------------------------------------*/
+/* ------------ COVID STAT BANNER -------------*/
+/* --------------------------------------------*/
 .covid-banner .covid-banner-asset .covid-banner-img {
     background-image: url("/images/coronavirus.jpg");
     width: 100%;
@@ -399,26 +416,77 @@ header {
     background-repeat: no-repeat;
 }
 
-.covid-stat-item {
-    /* margin: 1rem; */
-    width: 250px;
+.covid-stat-banner {
+    margin: auto;
+    padding: 2rem;
     text-align: center;
-    /* background-color: cyan; */
+    color: var(--main-color);
 }
 
-.covid-stat-heading:nth-child(odd) {
-    background-color: red;
-    z-index: 1;
-    cursor: pointer;
+.covid-stat-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.covid-stat-body:nth-child(odd) {
-    background-color: coral;
+.card-cases {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #ddd;
+    box-shadow: var(--shadow);
+    border-radius: 0.5rem;
 }
 
-/* ================================*/
-/* =============DOCTOR=============*/
-/* ================================*/
+.card-cases-heading {
+    font-size: 1.5rem;
+}
+
+.card-cases-body {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* --------------------------------------------*/
+/* -------------- COVID  CONTENT --------------*/
+/* --------------------------------------------*/
+
+.covid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem 0;
+}
+
+.covid-content-section {
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: #ddd;
+    box-shadow: var(--shadow);
+}
+
+.covid-content-section h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.covid-content-section ul {
+    padding: 0 0 0 1rem;
+}
+
+.covid-content-section li {
+    padding: 0.5rem 0;
+    list-style-type: square;
+}
+
+.covid-content .image {
+    background-image: url("/images/covid-img-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* =======================================*/
+/* ================ DOCTOR ===============*/
+/* =======================================*/
 
 .doctor-top-row-heading {
     display: flex;
@@ -461,9 +529,9 @@ header {
     font-size: 16px;
 }
 
-/* =====================================*/
-/* =============APPOINTMENT=============*/
-/* =====================================*/
+/* ========================================*/
+/* ============== APPOINTMENT =============*/
+/* ========================================*/
 
 .form-container {
     max-width: 500px;

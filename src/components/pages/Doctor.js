@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+
 const Doctor = () => {
     const [doctorInfo, setDoctorInfo] = useState({});
 
