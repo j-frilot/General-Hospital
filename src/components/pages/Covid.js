@@ -1,5 +1,5 @@
 import React from "react";
-
+import QandA from "../sections/QandA";
 const Covid = () => {
     return (
         <main className="container">
@@ -15,6 +15,7 @@ const Covid = () => {
                     <div className="covid-banner-img"></div>
                 </div>
             </section>
+            <QandA />
         </main>
     );
 };

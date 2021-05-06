@@ -399,6 +399,23 @@ header {
     background-repeat: no-repeat;
 }
 
+.covid-stat-item {
+    /* margin: 1rem; */
+    width: 250px;
+    text-align: center;
+    /* background-color: cyan; */
+}
+
+.covid-stat-heading:nth-child(odd) {
+    background-color: red;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.covid-stat-body:nth-child(odd) {
+    background-color: coral;
+}
+
 /* ================================*/
 /* =============DOCTOR=============*/
 /* ================================*/
