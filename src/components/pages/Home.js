@@ -5,11 +5,8 @@ import Dashboard from "../sections/Dashboard";
 const Home = () => {
     return (
         <main>
-            {/*<Slider />*/}
             <section className="hero">
-                <div className="hero-content">
-                    <h1>BANNER</h1>
-                </div>
+                <div className="hero-content"></div>
             </section>
             <hr className="hr" />
             <Dashboard />

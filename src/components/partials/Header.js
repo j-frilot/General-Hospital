@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header>
             <NavLink to="/covid" className="covid-alert">
-                <h1 className="covid-toggle">COVID-19 Alert: </h1>
+                <p className="covid-toggle">COVID-19 Alert: </p>
                 <p>
                     Important information for patients and families regarding
                     COVID-19 and vaccines.

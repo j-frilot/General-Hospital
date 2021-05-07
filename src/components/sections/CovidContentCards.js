@@ -1,40 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import covidContentCardData from "../data/covidContentCardData";
 
 const CovidContentCards = () => {
-    const [covidContent, setCovidContent] = useState([]);
-    useEffect(() => {
-        fetch("http://localhost:4000/api/content/covid")
-            .then((response) => response.json())
-            .then((response) => {
-                console.log(response);
-                setCovidContent(response);
-            });
-    }, []);
+    // const [covidContent, setCovidContent] = useState([]);
+    // useEffect(() => {
+    //     fetch("http://localhost:4000/api/content/covid")
+    //         .then((response) => response.json())
+    //         .then((response) => {
+    //             console.log(response);
+    //             setCovidContent(response);
+    //         });
+    // }, []);
 
     return (
         <section className="covid-content">
             <div className=" covid-content-section">
-                <h1>{covidContent[0][0]}</h1>
+                <h1>{covidContentCardData[0].heading_one}</h1>
                 <ul>
                     <li>
-                        <p>{covidContent.text_one}</p>
+                        <p>{covidContentCardData[0].text_one}</p>
                     </li>
                     <li>
-                        <p>{covidContent.text_two}</p>
+                        <p>{covidContentCardData[0].text_two}</p>
                     </li>
                 </ul>
             </div>
 
-            <div className=" covid-content-section"></div>
+            <div className=" covid-content-section image"></div>
 
             <div className=" covid-content-section">
-                <h1>{covidContent.heading_one}</h1>
+                <h1>{covidContentCardData[2].heading_one}</h1>
                 <ul>
                     <li>
-                        <p>{covidContent.text_one}</p>
+                        <p>{covidContentCardData[2].text_one}</p>
                     </li>
                     <li>
-                        <p>{covidContent.text_two}</p>
+                        <p>{covidContentCardData[2].text_two}</p>
                     </li>
                 </ul>
             </div>

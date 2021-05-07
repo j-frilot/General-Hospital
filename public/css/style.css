@@ -1,6 +1,10 @@
+html {
+    font-size: 14px;
+}
 :root {
     --main-color: #01264d;
     --accent-color: #184981;
+    --font-light: #eee;
     --shadow: 0 4px 8px 0 rgba(0, 0, 0, 50%);
 }
 * {
@@ -58,7 +62,7 @@ h3 {
     padding: 5px 20px;
     outline: none;
     border: none;
-    color: #eee;
+    color: var(--font-light);
     background-color: var(--main-color);
 }
 
@@ -86,75 +90,59 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    font-size: 1.4rem;
     text-align: center;
     text-decoration: underline;
-    background-color: #eee;
-}
-
-.covid-alert h1 {
-    padding-right: 5px;
-    font-size: 20px;
-}
-
-.covid-alert p {
-    font-size: 20px;
+    background-color: var(--font-light);
 }
 
 .header-content {
-    padding-top: 20px;
+    padding-top: 1.4rem;
 }
 
 .logo-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 20px 0;
-    /* padding-top: 20px; */
+    margin: 1.4rem 0;
 }
 
 .logo-row h1 {
-    padding-left: 15px;
-    margin: 0 15px;
-
-    font-size: 45px;
+    padding-left: 1rem;
+    margin: 0 1rem;
+    font-size: 3.25rem;
     text-transform: uppercase;
     text-decoration: underline;
-    color: #eee;
-    border-left: solid 3px;
+    color: var(--font-light);
+    border-left: solid 0.25rem;
 }
 
 .logo-row .img {
     height: 75px;
 }
 
-.logo-row .btn {
-    font-size: 14px;
-    color: #eee;
-}
-
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 0.75rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: #eee;
+    color: var(--font-light);
     background-color: #184981;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
 }
 
 .nav-bar .nav-item {
-    padding: 0px 10px;
-    border-left: solid 1px #eee;
-    border-right: solid 1px #eee;
+    padding: 0 0.75rem;
+    border-left: solid 1px var(--font-light);
+    border-right: solid 1px var(--font-light);
     background-color: #184981;
 }
 
-/* -------------------------------------*/
 /* --------------- HOME HERO ---------- */
-/* ------------------------------------ */
+
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("/images/banner-1.jpg");
@@ -171,47 +159,51 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* ---------------------------------------*/
+
 /* ------------- DASHBOARD -------------- */
-/* -------------------------------------- */
 
 .dashboard {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    gap: 10px;
+    gap: 0.75rem;
 }
 
 .dashboard .dashboard-card {
-    padding: 15px;
-
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
     box-shadow: var(--shadow);
 }
 .dashboard-card-heading {
-    padding: 5px 0;
+    padding: 0.4rem 0;
     text-transform: capitalize;
-    color: #eee;
+    color: var(--font-light);
     background: var(--accent-color);
 }
 
 .dashboard-card-body {
-    padding-top: 10px;
+    padding-top: 1rem;
 }
-/* ----------------------------------- */
-/* ------------- Specialties ----------*/
-/* ----------------------------------- */
 
+/* ------------- Specialties ----------*/
+.specialties {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.specialties-heading {
+    padding: 1rem 0;
+}
 .specialties-grid {
-    margin: 10px 0;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
+    gap: 0.75rem;
     justify-content: center;
 }
 
 .specialties-grid-item {
-    margin: 10px 0;
-    padding: 15px;
+    padding: 1rem;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -219,12 +211,10 @@ header {
 }
 
 .specialties-grid-item img {
-    width: 125px;
+    width: 9rem;
 }
 
-/* ================================= */
 /* ============= FOOTER ============ */
-/* ================================= */
 
 footer {
     background-color: var(--main-color);
@@ -234,37 +224,28 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    color: #fff;
-    font-size: 13px;
+    color: var(--font-light);
+    font-size: 1rem;
 }
 
 .footer-grid .footer-grid-item h3 {
-    font-size: 22px;
+    font-size: 1.75rem;
 }
-/* .footer-grid-item {
-    border: solid 1px var(--main-color);
-} */
 
 .copy-right {
-    background-color: #ddd;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    background-color: #ddd;
+    opacity: 0.7;
     text-align: center;
 }
-/* --------------------------------------*/
+
 /* -------------- SLIDER ----------------*/
-/* --------------------------------------*/
 .slide-show {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-
-    /* width: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: center; */
 }
 
 .slide-show-img {
@@ -293,7 +274,7 @@ footer {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
-    color: #eee;
+    color: var(--font-light);
     font-size: 3rem;
     font-weight: bold;
 }
@@ -311,7 +292,7 @@ footer {
     width: 400px;
 }
 .directory form {
-    padding: 10px;
+    padding: 0.75px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -319,31 +300,32 @@ footer {
 }
 
 .directory form input {
-    padding: 5px 2px;
+    margin: 0.25rem;
+    padding: 0.4rem 0.25rem;
 }
 
 .directory form label {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .directory form .form-group {
     margin: auto;
-    padding: 15px 0;
+    padding: 1rem 0;
 }
 /* -----------form end-------- */
 .directory .alphabet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 16px;
+    font-size: 1.25rem;
 }
 .directory .results-ul {
     flex-grow: 1;
     padding: 0;
 }
 .directory .results-item {
-    margin: 40px 0;
+    margin: 2.75rem 0;
     display: list-item;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 50%);
 }
@@ -364,18 +346,18 @@ footer {
 
 .directory .results-item-info {
     flex-grow: 100;
-    padding: 40px 48px 0;
+    padding: 2.75rem 3.4rem 0;
     font-family: granjon;
     text-transform: capitalize;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.25rem;
     color: var(--accent-color);
     border: 1px dotted var(--main-color);
 }
 
 .directory .results-item-info .info-heading {
     font-weight: normal;
-    font-size: 32px;
+    font-size: 2.25rem;
 }
 
 .search {
@@ -395,7 +377,7 @@ footer {
 .covid-banner .covid-banner-text {
     width: 50%;
     order: 1;
-    padding: 40px 40px;
+    padding: 2.75rem 2.75rem;
     background-color: #ddd;
     align-items: center;
 }
@@ -466,6 +448,7 @@ footer {
 .covid-content-section h1 {
     text-align: center;
     font-size: 1.5rem;
+    text-transform: capitalize;
 }
 
 .covid-content-section ul {
@@ -500,7 +483,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 15px 0;
+    padding: 1rem 0;
     text-transform: capitalize;
 }
 
@@ -515,18 +498,18 @@ footer {
 }
 
 .top-row-info-item h3 {
-    font-size: 23px;
+    font-size: 1.5rem;
 }
 
 .top-row-info-item .btn {
-    color: #eee;
+    color: var(--font-light);
 }
 
 .doctor-bottom-row {
     width: 70%;
     margin: auto;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.25rem;
 }
 
 /* ========================================*/
@@ -535,23 +518,23 @@ footer {
 
 .form-container {
     max-width: 500px;
-    border-radius: 8px;
-    margin: 10px auto;
-    padding: 20px;
-    color: #eee;
+    border-radius: 0.5rem;
+    margin: 0.75rem auto;
+    padding: 1.5rem;
+    color: var(--font-light);
     background: var(--main-color);
 }
 .form-container fieldset {
     border: none;
 }
 .form-container legend {
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
     font-size: 1.5rem;
 }
 
 .form-container label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 .form-container input[type="text"],
 .form-container input[type="date"],
@@ -564,8 +547,8 @@ footer {
     border: none;
     border-radius: 4px;
     margin: 0 0 30px 0;
-    padding: 10px;
-    font-size: 15px;
+    padding: 0.75rem;
+    font-size: 1rem;
     outline: 0;
     color: var(--accent-color);
 }
@@ -593,7 +576,7 @@ footer {
     padding: 19px 39px 18px 39px;
     font-size: 18px;
     text-align: center;
-    color: #eee;
+    color: var(--font-light);
     background: var(--accent-color);
 }
 .form-container input[type="submit"]:hover,

@@ -10,7 +10,7 @@ const CovidStatBanner = () => {
             });
     }, []);
 
-    const uTime = 1620315678575;
+    const uTime = stats.updated;
     const dateObject = new Date(uTime);
     const humanDateFormat = dateObject.toLocaleString();
 

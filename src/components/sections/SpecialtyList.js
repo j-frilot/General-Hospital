@@ -13,11 +13,13 @@ const SpecialtyList = () => {
     return (
         <>
             <section className="specialties container">
-                <h2>Our Specialties</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Mollitia, totam.
-                </p>
+                <div className="specialties-heading">
+                    <h2>Our Specialties</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Mollitia, totam.
+                    </p>
+                </div>
 
                 <div className="specialties-grid">
                     {specialties.slice(0, 6).map((specialty) => (
