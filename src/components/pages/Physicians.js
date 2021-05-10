@@ -1,5 +1,7 @@
 import React from "react";
 import PhysicianResults from "../sections/PhysicianResults";
+import Filter from "../sections/Filter";
+import { getSuggestedQuery } from "@testing-library/dom";
 
 const Physicians = (props) => {
     return (
@@ -11,125 +13,8 @@ const Physicians = (props) => {
             </section>
             <hr className="hr" />
 
+            <Filter getQuery={(q) => getSuggestedQuery(q)} />
             <section className="directory container">
-                <div className="search">
-                    <h3>Filter Results</h3>
-                    <form
-                        action="#!"
-                        className="doctor-filter"
-                        id="doctor-filter"
-                    >
-                        <div className="form-group">
-                            <label htmlFor="search-name">Search By Name</label>
-                            <input
-                                type="text"
-                                id="search-name"
-                                className="form-input"
-                                name="name"
-                                placeholder="Search Name"
-                            />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="search_specialty">
-                                Find by Specialty
-                            </label>
-                            <select
-                                name="specialty"
-                                className="form-input"
-                                id="search-specialty"
-                            >
-                                <option value="#!">All Specialties</option>
-                                <option value="anesthesiology">
-                                    Anesthesiology
-                                </option>
-                                <option value="cardiology">Cardiology</option>
-                                <option value="dermatology">Dermatology</option>
-                                <option value="family-medicine">
-                                    Family Medicine
-                                </option>
-                                <option value="gastroenterology">
-                                    Gastroenterology
-                                </option>
-                                <option value="general-surgery">
-                                    General Surgery
-                                </option>
-                                <option value="gynecology">Gynecology</option>
-                                <option value="internal-medicine">
-                                    Internal Medicine
-                                </option>
-                                <option value="maternal-fetal-medicine">
-                                    Maternal &amp Fetal Medicine
-                                </option>
-                                <option value="nephrology">Nephrology</option>
-                                <option value="neurology">Neurology</option>
-                                <option value="neuro-surgery">
-                                    Neuro Surgery
-                                </option>
-                                <option value="pediatrics">Pediatrics</option>
-                                <option value="podietry">Podietry</option>
-                                <option value="pulmonology">Pulmonology</option>
-                                <option value="urology">Urology</option>
-                            </select>
-                        </div>
-
-                        <div className="form-group radio-gender">
-                            <label htmlFor="search_specialty">
-                                Find By Gender
-                            </label>
-                            <input
-                                className="radio-input"
-                                type="radio"
-                                name="gender"
-                                id="gender-none"
-                                value="#!"
-                            />
-                            <label
-                                className="radio-label"
-                                htmlFor="gender-none"
-                            >
-                                No Preference
-                            </label>
-                            <input
-                                className="radio-input"
-                                type="radio"
-                                name="gender"
-                                id="gender-female"
-                                value="Female"
-                            />
-                            <label
-                                className="radio-label"
-                                htmlFor="gender-female"
-                            >
-                                Female Physicians
-                            </label>
-                            <input
-                                className="radio-input"
-                                type="radio"
-                                name="gender"
-                                id="gender-male"
-                                value="Male"
-                            />
-                            <label
-                                className="radio-label"
-                                htmlFor="gender-male"
-                            >
-                                Male Physicians
-                            </label>
-                        </div>
-
-                        <div className="form-group">
-                            <button className="btn-submit btn">Filter</button>
-                        </div>
-
-                        <input
-                            type="hidden"
-                            name="action"
-                            value="filter_find_a_doctor"
-                        />
-                    </form>
-                </div>
-
                 <div className="results">
                     <div className="alphabet">
                         <a href="#!" className="all">
