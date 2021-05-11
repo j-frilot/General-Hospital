@@ -1,10 +1,10 @@
 import React from "react";
-import covidContentCardData from "../data/covidContentCardData";
+import covidContentCardData from "./covidContentCardData";
 
 const CovidContentCards = () => {
     // const [covidContent, setCovidContent] = useState([]);
     // useEffect(() => {
-    //     fetch("http://localhost:4000/api/content/covid")
+    //     fetch("http://localhost:4000/api/covid")
     //         .then((response) => response.json())
     //         .then((response) => {
     //             console.log(response);

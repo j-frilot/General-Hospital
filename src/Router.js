@@ -1,9 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import Physicians from "./components/pages/Physicians";
-import Covid from "./components/pages/Covid";
-import Doctor from "./components/pages/Doctor";
+import Home from "./components/Home/Home";
+import Physicians from "./components/Physicians/Physicians";
+import Covid from "./components/Covid/Covid";
+import Doctor from "./components/Physicians/Doctor";
 import Appointment from "./components/pages/Appointment";
 
 const Router = () => {

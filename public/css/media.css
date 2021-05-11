@@ -11,22 +11,6 @@
     .specialties-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    /* .covid-banner .covid-banner-text {
-        width: 100%;
-        padding: 2.0625rem 1.5rem;
-        background-color: #efefef;
-        order: 2;
-        display: flex;
-    }
-
-    .covid-banner .covid-banner-asset {
-        width: 100%;
-        height: 160px;
-        position: relative;
-        order: 1;
-        z-index: 5;
-    } */
 }
 
 /* when get to 768 and smaller */
@@ -62,6 +46,10 @@
     .physicianss-banner-body h2 {
         font-size: 2.5rem;
     }
+    .directory .results-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .directory .results-item-flex {
         display: block;
     }
@@ -69,6 +57,9 @@
         max-width: 300px;
         padding: 16px;
         margin: 0 auto;
+    }
+    .directory .results-item-info .info-heading {
+        font-size: 1.75rem;
     }
     .top-row-info-item h3 {
         font-size: 18px;
@@ -142,5 +133,19 @@
     .banner-container,
     .covid-banner {
         height: 250px;
+    }
+}
+
+/* when get to 500 and smaller */
+@media (max-width: 500px) {
+    .directory .results-ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .directory .results-item {
+        margin: 1rem 0;
+    }
+    .directory .results-item-img img {
+        height: 200px;
     }
 }

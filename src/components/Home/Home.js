@@ -1,6 +1,6 @@
 import React from "react";
-import SpecialtiesList from "../sections/SpecialtyList";
-import Dashboard from "../sections/Dashboard";
+import SpecialtiesList from "./SpecialtyList";
+import Dashboard from "./Dashboard";
 
 const Home = () => {
     return (
@@ -8,10 +8,8 @@ const Home = () => {
             <section className="hero">
                 <div className="hero-content"></div>
             </section>
-            <hr className="hr" />
             <Dashboard />
             <SpecialtiesList />
-            <hr className="hr" />
         </main>
     );
 };

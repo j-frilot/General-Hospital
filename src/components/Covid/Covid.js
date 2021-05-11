@@ -1,6 +1,6 @@
 import React from "react";
-import CovidStatBanner from "../sections/CovidStatBanner";
-import CovidContentCards from "../sections/CovidContentCards";
+import CovidStatBanner from "./CovidStatBanner";
+import CovidContentCards from "./CovidContentCards";
 
 const Covid = () => {
     return (
