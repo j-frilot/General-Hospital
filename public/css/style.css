@@ -279,40 +279,7 @@ footer {
     font-weight: bold;
 }
 
-/* .directory {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
-/* ----form start------- */
-/* .directory .search {
-    width: 400px;
-} */
-
-/*
-.directory form input {
-    margin: 0.25rem;
-    padding: 0.4rem 0.25rem;
-}
-
-.directory form label {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.directory form .form-group {
-    margin: auto;
-    padding: 1rem 0;
-}
-*/
-
 /* -----------form end-------- */
-
-/* .directory .alphabet {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.25rem;
-} */
 
 .directory .results-ul {
     display: grid;

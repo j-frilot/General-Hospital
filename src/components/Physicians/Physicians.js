@@ -1,6 +1,5 @@
 import React from "react";
-import LetterSearch from "./LetterSearch";
-import FilterForm from "./FilterForm";
+
 import PhysicianResults from "./PhysicianResults";
 
 const Physicians = (props) => {
@@ -12,8 +11,6 @@ const Physicians = (props) => {
                 </div>
             </section>
             <div className="directory">
-                <FilterForm />
-
                 <PhysicianResults />
             </div>
         </main>
