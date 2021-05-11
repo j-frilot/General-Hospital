@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -19,21 +20,43 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-grid-item">
-                    <h3>About General</h3>
+                    <h3>General Hospital</h3>
                     <ul className="contact-ul">
                         <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>News</li>
-                        <li>Physicians</li>
+                        <NavLink to="/contact">Contact</NavLink>
+                        <li>
+                            <NavLink to="/covid">COVID-19 Info</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/physicians">
+                                Find A Physicians
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/appoinemtne">
+                                Make an appointment
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-grid-item">
                     <h3>Helpful Links</h3>
                     <ul className="contact-ul">
-                        <li>CDC</li>
-                        <li>COVID</li>
-                        <li>Physicians</li>
-                        <li>Make an appointment</li>
+                        <li>
+                            <a href="https://www.cdc.gov/">
+                                Centers for Disease Control & Intervention
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://msdh.ms.gov/">
+                                Mississippi Department of Health
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://coronavirus.jhu.edu/map.html">
+                                John Hopkins Corona Resourse Center
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-grid-item">

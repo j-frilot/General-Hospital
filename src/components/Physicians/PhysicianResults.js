@@ -56,7 +56,7 @@ const PhysicianResults = () => {
                                 <div className="results-item-info ">
                                     <span className="info-heading">
                                         {result.first_name} {result.last_name}{" "}
-                                        M.D.
+                                        {result.suffix}
                                     </span>
 
                                     <span className="info-body">

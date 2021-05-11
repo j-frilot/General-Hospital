@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import Appointment from "./Appointment";
 
 const Doctor = () => {
     const [doctorInfo, setDoctorInfo] = useState({});
@@ -22,6 +23,7 @@ const Doctor = () => {
                     <div className="doctor-top-row-heading">
                         <h2>
                             Dr. {doctorInfo.first_name} {doctorInfo.last_name}{" "}
+                            {doctorInfo.suffix}
                         </h2>
                     </div>
                     <div className="doctor-top-row-info">
@@ -61,6 +63,7 @@ const Doctor = () => {
                         <p>{doctorInfo.info}</p>
                     </div>
                 </div>
+                <Appointment />
             </main>
         </>
     );

@@ -1,5 +1,5 @@
 import Axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Appointment = () => {
     const [patient_first_name, setPatientFirstName] = useState("");
@@ -12,10 +12,12 @@ const Appointment = () => {
     const [height, setHeight] = useState("");
     const [weight, setWeight] = useState("");
 
+    //function from submit button to initiate the form
     const displayInfo = (event) => {
         event.preventDefault();
 
         console.log(
+            //testing
             patient_first_name,
             patient_last_name,
             physicians_id,
@@ -26,6 +28,8 @@ const Appointment = () => {
             height,
             weight
         );
+
+        //post request to api to submit form
         Axios.post(`http://localhost:4000/api/appointments/makeappointment`, {
             patient_first_name: patient_first_name,
             patient_last_name: patient_last_name,
@@ -41,6 +45,17 @@ const Appointment = () => {
             console.log(res.data);
         });
     };
+
+    // Setting name from api and using .map() to use in the physician dropdown box.
+    const [name, setName] = useState([]);
+    useEffect(() => {
+        fetch(`http://localhost:4000/api/physicians/`)
+            .then((response) => response.json())
+            .then((response) => {
+                console.log(response);
+                setName(response);
+            });
+    }, []);
 
     return (
         <div>
@@ -79,23 +94,15 @@ const Appointment = () => {
                                 }}
                             >
                                 <optgroup label="Physicians">
-                                    <option value="1">Steven Santiago</option>
-                                    <option value="2">Jan Sharp</option>
-                                    <option value="3">Joy Mckenzie</option>
-                                    <option value="4">Sophie Mccormik</option>
-                                    <option value="5">Dave Morrison</option>
-                                    <option value="6">Leigh Morton</option>
-                                    <option value="7">Jamie Rodgers</option>
-                                    <option value="8">Horace Roberts</option>
-                                    <option value="9">Clara Burke</option>
-                                    <option value="10">Geneva Curtis</option>
-                                    <option value="11">Meghan Brewer</option>
-                                    <option value="12">Vernon Owens</option>
-                                    <option value="13">Lynn Greene</option>
-                                    <option value="14">Heather Sherman</option>
-                                    <option value="15">Johnathan</option>
-                                    <option value="16">Joe Chandler</option>
-                                    <option value="17">Angeline Collins</option>
+                                    {name.map((aName) => (
+                                        <option
+                                            key={aName.physicians_id}
+                                            value={aName.physicians_id}
+                                        >
+                                            Dr. {aName.first_name}{" "}
+                                            {aName.last_name} {aName.suffix}
+                                        </option>
+                                    ))}
                                 </optgroup>
                             </select>
 

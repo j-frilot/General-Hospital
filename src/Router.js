@@ -3,8 +3,9 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Physicians from "./components/Physicians/Physicians";
 import Covid from "./components/Covid/Covid";
-import Doctor from "./components/Physicians/Doctor";
-import Appointment from "./components/pages/Appointment";
+import Doctor from "./components/Doctor/Doctor";
+import Appointment from "./components/Doctor/Appointment";
+import Contact from "./components/Contact/Contact";
 
 const Router = () => {
     return (
@@ -14,6 +15,7 @@ const Router = () => {
             <Route exact path="/covid" component={Covid} />
             <Route exact path="/physicians/:id" component={Doctor} />
             <Route exact path="/appointment" component={Appointment} />
+            <Route exact path="/contact" component={Contact} />
         </Switch>
     );
 };

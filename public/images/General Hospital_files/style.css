@@ -508,7 +508,6 @@ footer {
 .form-container input[type="datetime"],
 .form-container input[type="number"],
 .form-container input[type="tel"],
-.form-container input[type="email"],
 .form-container textarea,
 .form-container select {
     width: 100%;
@@ -530,7 +529,6 @@ footer {
 .form-container input[type="time"]:focus,
 .form-container input[type="url"]:focus,
 .form-container input[type="tel"]:focus,
-.form-container input[type="email"]:focus,
 .form-container textarea:focus,
 .form-container select:focus {
     background: #ddd;
@@ -553,26 +551,4 @@ footer {
 .form-container input[type="button"]:hover {
     background: var(--accent-color);
     cursor: pointer;
-}
-
-/* ========================================*/
-/* ================ CONTACT ===============*/
-/* ========================================*/
-
-.contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-.inquiries,
-.form-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.inquiries-heading,
-.inquiries-list li {
-    border-bottom: var(--main-color) solid 1px;
-    padding: 1.5rem 0;
-    font-weight: bold;
 }
