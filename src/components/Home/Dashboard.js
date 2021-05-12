@@ -14,7 +14,7 @@ const Dashboard = () => {
     return (
         <section className="dashboard dashboard-card container">
             {dashboard.map((dash) => (
-                <div key={dash.section_id} className="dashboard-card">
+                <div key={dash.section_id} className="module dashboard-card">
                     <div className="dashboard-card-heading">
                         <h3>
                             <i className="fas fa-user-md icon"></i>

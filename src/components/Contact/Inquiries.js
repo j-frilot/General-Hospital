@@ -1,8 +1,8 @@
 import React from "react";
 
-const Visitors = () => {
+const Inquiries = () => {
     return (
-        <section className="inquiries">
+        <section className="module inquiries">
             <div className="inquiries-list-container">
                 <h1 className="inquiries-heading">Common Inquiries</h1>
                 <ul className="inquiries-list">
@@ -24,4 +24,4 @@ const Visitors = () => {
     );
 };
 
-export default Visitors;
+export default Inquiries;

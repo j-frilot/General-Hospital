@@ -14,7 +14,7 @@ const CovidContentCards = () => {
 
     return (
         <section className="covid-content">
-            <div className=" covid-content-section">
+            <div className=" module covid-content-section">
                 <h1>{covidContentCardData[0].heading_one}</h1>
                 <ul>
                     <li>
@@ -26,9 +26,9 @@ const CovidContentCards = () => {
                 </ul>
             </div>
 
-            <div className=" covid-content-section image"></div>
+            <div className=" module covid-content-section image"></div>
 
-            <div className=" covid-content-section">
+            <div className=" module covid-content-section">
                 <h1>{covidContentCardData[2].heading_one}</h1>
                 <ul>
                     <li>

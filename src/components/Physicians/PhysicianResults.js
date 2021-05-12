@@ -41,7 +41,10 @@ const PhysicianResults = () => {
             <section className="results">
                 <ul className="results-ul">
                     {filteredDoctor.map((result) => (
-                        <li className="results-item" key={result.physicians_id}>
+                        <li
+                            className="module results-item"
+                            key={result.physicians_id}
+                        >
                             <NavLink
                                 className="results-item-flex"
                                 to={`/physicians/${result.physicians_id}`}

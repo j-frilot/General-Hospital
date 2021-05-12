@@ -23,7 +23,7 @@ const Footer = () => {
                     <h3>General Hospital</h3>
                     <ul className="contact-ul">
                         <li>About Us</li>
-                        <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/contact-us">Contact</NavLink>
                         <li>
                             <NavLink to="/covid">COVID-19 Info</NavLink>
                         </li>

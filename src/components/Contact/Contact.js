@@ -1,11 +1,11 @@
 import React from "react";
 import ContactForm from "./ContactForm";
-import Visitors from "./Visitors";
+import Inquiries from "./Inquiries";
 
 const Contact = () => {
     return (
         <main className="container contact">
-            <Visitors />
+            <Inquiries />
             <ContactForm />
         </main>
     );

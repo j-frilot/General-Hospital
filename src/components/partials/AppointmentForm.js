@@ -1,7 +1,7 @@
 import Axios from "axios";
 import React, { useState, useEffect } from "react";
 
-const Appointment = () => {
+const AppointmentForm = () => {
     const [patient_first_name, setPatientFirstName] = useState("");
     const [patient_last_name, setPatientLastName] = useState("");
     const [physicians_id, setPhysiciansId] = useState("");
@@ -60,7 +60,7 @@ const Appointment = () => {
     return (
         <div>
             <main className="container form-container">
-                <div className="form-container">
+                <section className="module form-container">
                     <form onSubmit={displayInfo}>
                         <fieldset>
                             <legend>Schedule An Appointment</legend>
@@ -167,10 +167,10 @@ const Appointment = () => {
                             // onClick={displayInfo}
                         />
                     </form>
-                </div>
+                </section>
             </main>
         </div>
     );
 };
 
-export default Appointment;
+export default AppointmentForm;

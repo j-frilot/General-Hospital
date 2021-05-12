@@ -17,23 +17,23 @@ const CovidStatBanner = () => {
     return (
         <section className="container covid-stat-banner">
             <div className="covid-stat-card-row">
-                <div className="card card-cases">
+                <div className="module card card-cases">
                     <p className="card-cases-heading">Total Cases:</p>
                     <p className="card-cases-body"> {stats.cases}</p>
                 </div>
-                <div className="card card-cases">
+                <div className="module card card-cases">
                     <p className="card-cases-heading">Total Deaths:</p>
                     <p className="card-cases-body"> {stats.deaths}</p>
                 </div>
-                <div className="card card-cases">
+                <div className="module card card-cases">
                     <p className="card-cases-heading">Active Cases:</p>
                     <p className="card-cases-body">{stats.active}</p>
                 </div>
-                <div className="card card-cases">
+                <div className="module card card-cases">
                     <p className="card-cases-heading">New Cases:</p>
                     <p className="card-cases-body">{stats.todayCases}</p>
                 </div>
-                <div className="card card-cases">
+                <div className="module card card-cases">
                     <p className="card-cases-heading">New Deaths:</p>
                     <p className="card-cases-body">{stats.todayDeaths}</p>
                 </div>

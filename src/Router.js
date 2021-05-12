@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 import Physicians from "./components/Physicians/Physicians";
 import Covid from "./components/Covid/Covid";
 import Doctor from "./components/Doctor/Doctor";
-import Appointment from "./components/Doctor/Appointment";
+import Appointment from "./components/Appointments/Appointment";
 import Contact from "./components/Contact/Contact";
 
 const Router = () => {
@@ -15,7 +15,7 @@ const Router = () => {
             <Route exact path="/covid" component={Covid} />
             <Route exact path="/physicians/:id" component={Doctor} />
             <Route exact path="/appointment" component={Appointment} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/contact-us" component={Contact} />
         </Switch>
     );
 };
