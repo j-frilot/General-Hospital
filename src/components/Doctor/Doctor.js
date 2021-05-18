@@ -17,7 +17,7 @@ const Doctor = () => {
     }, [id]);
 
     return (
-        <main className="container">
+        <main className="container doctor-container">
             <div className="doctor-top-row">
                 <div className="doctor-top-row-heading">
                     <h2>
@@ -56,6 +56,7 @@ const Doctor = () => {
                     </div>
                 </div>
             </div>
+            <hr />
             <div className="doctor-bottom-row">
                 <div className="doctor-bottom-row-bio">
                     <h3>About Dr. {doctorInfo.last_name}</h3>

@@ -64,7 +64,8 @@ h3 {
     outline: none;
     border: none;
     color: var(--font-light);
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
+    border-radius: 0.5rem;
 }
 
 .bold {
@@ -435,12 +436,17 @@ footer {
 /* =======================================*/
 /* ================ DOCTOR ===============*/
 /* =======================================*/
+.doctor-top-row {
+    margin: 1.5rem 0;
+}
 
 .doctor-top-row-heading {
+    margin: 1rem 0;
     display: flex;
     justify-content: center;
     text-align: center;
     text-transform: capitalize;
+    color: var(--main-color);
 }
 
 .doctor-top-row-info {
@@ -472,7 +478,7 @@ footer {
 
 .doctor-bottom-row {
     width: 70%;
-    margin: auto;
+    margin: 0.5rem auto;
     text-align: center;
     font-size: 1.25rem;
 }

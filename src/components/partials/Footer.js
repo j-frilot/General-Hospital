@@ -1,44 +1,69 @@
 import React from "react";
+// import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
+    // const [links, setLinks] = useState([]);
+
+    // useEffect(() => {
+    //     fetch(`http://localhost:4000/api/footer`)
+    //         .then((response) => response.json())
+    //         .then((response) => {
+    //             console.log(response);
+    //             setLinks(response);
+    //         });
+    // }, []);
+
     return (
         <footer>
             <section className="footer-grid">
                 <div className="footer-grid-item">
                     <h3>Contact Us</h3>
                     <ul className="contact-ul">
-                        <li>125 Main Street</li>
-                        <li>Codeville, MS 12012</li>
-                        <li>(555) 555-5555</li>
                         <li>
-                            <a href="/">Directions</a>
+                            <p>123 main Street</p>
                         </li>
                         <li>
-                            <a href="/">Other Locations</a>
+                            <p>codeville ms 12012</p>
+                        </li>
+                        <li>
+                            <p>(555)-555-5555</p>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <p>directions</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
+
                 <div className="footer-grid-item">
                     <h3>General Hospital</h3>
                     <ul className="contact-ul">
-                        <li>About Us</li>
-                        <NavLink to="/contact-us">Contact</NavLink>
                         <li>
-                            <NavLink to="/covid">COVID-19 Info</NavLink>
+                            <NavLink to="/contact-us">
+                                <p>Contact Us</p>
+                            </NavLink>
                         </li>
+
                         <li>
-                            <NavLink to="/physicians">
-                                Find A Physicians
+                            <NavLink to="/covid">
+                                <p>Covid-19 Info</p>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/appoinemtne">
-                                Make an appointment
+                            <NavLink to="/physicians">
+                                <p>Our Physicians</p>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/appointments">
+                                <p>Appointments</p>
                             </NavLink>
                         </li>
                     </ul>
                 </div>
+
                 <div className="footer-grid-item">
                     <h3>Helpful Links</h3>
                     <ul className="contact-ul">
@@ -62,18 +87,26 @@ const Footer = () => {
                 <div className="footer-grid-item">
                     <h3>Other</h3>
                     <ul className="contact-ul">
-                        <li>Donate</li>
-                        <li>Subscribe To Newsletter</li>
                         <li>
-                            <a href="/">Facebook</a>
+                            <p>Donate</p>
+                        </li>
+                        <li>
+                            <p>Subscribe To Newsletter</p>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <p> Facebook</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section className="copy-right">
-                Sources: CDC, Mississippi Department of Health, John Hopkins
-                University
+                <p>
+                    Sources: CDC, Mississippi Department of Health, John Hopkins
+                    University
+                </p>
             </section>
         </footer>
     );
