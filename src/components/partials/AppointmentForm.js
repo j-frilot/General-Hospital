@@ -1,4 +1,4 @@
-import Axios from "axios";
+// import Axios from "axios";
 import React, { useState, useEffect } from "react";
 
 const AppointmentForm = () => {
@@ -29,21 +29,46 @@ const AppointmentForm = () => {
             weight
         );
 
-        //post request to api to submit form
-        Axios.post(`http://localhost:4000/api/appointments/makeappointment`, {
-            patient_first_name: patient_first_name,
-            patient_last_name: patient_last_name,
-            physicians_id: physicians_id,
-            appointment_date: appointment_date,
-            insurance: insurance,
-            telephone: telephone,
-            comments: comments,
-            height: height,
-            weight: weight
-        }).then((res) => {
-            console.log(res);
-            console.log(res.data);
-        });
+        // //post request to api to submit form
+        // Axios.post(`http://localhost:4000/api/appointments/makeappointment`, {
+        //     patient_first_name: patient_first_name,
+        //     patient_last_name: patient_last_name,
+        //     physicians_id: physicians_id,
+        //     appointment_date: appointment_date,
+        //     insurance: insurance,
+        //     telephone: telephone,
+        //     comments: comments,
+        //     height: height,
+        //     weight: weight
+        // }).then((res) => {
+        //     console.log(res);
+        //     console.log(res.data);
+        // });
+
+        fetch("http://localhost:4000/api/appointments/makeappointment", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                patient_first_name,
+                patient_last_name,
+                physicians_id,
+                appointment_date,
+                insurance,
+                telephone,
+                comments,
+                height,
+                weight
+            })
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Success:", data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
     };
 
     // Setting name from api and using .map() to use in the physician dropdown box.
