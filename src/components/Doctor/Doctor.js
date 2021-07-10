@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import React, { useState, useEffect } from "react";
+import React from "react";
+// import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import AppointmentForm from "../partials/AppointmentForm";
+import doctorInfo from "../Physicians/physicians_data";
 
 const Doctor = () => {
-    const [doctorInfo, setDoctorInfo] = useState({});
+    // const [doctorInfo, setDoctorInfo] = useState({});
 
-    const { id } = useParams();
-    useEffect(() => {
-        fetch(`http://localhost:4000/api/physicians/${id}`)
-            .then((response) => response.json())
-            .then((response) => {
-                console.log(response);
-                setDoctorInfo(response);
-            });
-    }, [id]);
+    // const { id } = useParams();
+    // useEffect(() => {
+    //     fetch(`http://localhost:4000/api/physicians/${id}`)
+    //         .then((response) => response.json())
+    //         .then((response) => {
+    //             console.log(response);
+    //             setDoctorInfo(response);
+    //         });
+    // }, [id]);
 
     return (
         <main className="container doctor-container">

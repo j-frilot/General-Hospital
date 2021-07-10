@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
+import specialties from "../Physicians/physicians_data";
 
 const SpecialtyList = () => {
-    const [specialties, setSpecialties] = useState([]);
-    useEffect(() => {
-        fetch("http://localhost:4000/api/physicians")
-            .then((response) => response.json())
-            .then((response) => {
-                setSpecialties(response);
-            });
-    }, []);
+    // const [specialties, setSpecialties] = useState([]);
+    // useEffect(() => {
+    //     fetch("http://localhost:4000/api/physicians")
+    //         .then((response) => response.json())
+    //         .then((response) => {
+    //             setSpecialties(response);
+    //         });
+    // }, []);
 
     return (
         <section className="specialties container">

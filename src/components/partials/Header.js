@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import links from "./header_data";
 
 const Header = () => {
-    const [links, setLinks] = useState([]);
+    // const [links, setLinks] = useState([]);
 
-    useEffect(() => {
-        fetch(`http://localhost:4000/api/header/`)
-            .then((response) => response.json())
-            .then((response) => {
-                console.log(response);
-                setLinks(response);
-            });
-    }, []);
+    // useEffect(() => {
+    //     fetch(`http://localhost:4000/api/header/`)
+    //         .then((response) => response.json())
+    //         .then((response) => {
+    //             console.log(response);
+    //             setLinks(response);
+    //         });
+    // }, []);
 
     return (
         <header>

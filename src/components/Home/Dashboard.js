@@ -1,16 +1,19 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import dashboard from "./dashboard-data";
 
 const Dashboard = () => {
-    const [dashboard, setDashboard] = useState([]);
+    // const [dashboard, setDashboard] = useState([]);
 
-    useEffect(() => {
-        fetch("http://localhost:4000/api/dash")
-            .then((res) => res.json())
-            .then((res) => {
-                setDashboard(res);
-            });
-    }, []);
+    // useEffect(() => {
+    //     fetch("http://localhost:4000/api/dash")
+    //         .then((res) => res.json())
+    //         .then((res) => {
+    //             setDashboard(res);
+    //         });
+    // }, []);
+
     return (
         <section className="dashboard dashboard-card container">
             {dashboard.map((dash) => (

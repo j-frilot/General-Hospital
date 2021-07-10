@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import allDoctors from "./physicians_data";
 
 const PhysicianResults = () => {
-    const [allDoctors, setAllDoctors] = useState([]);
+    // const [allDoctors, setAllDoctors] = useState([]);
     const [inputBar, setInputBar] = useState("");
     const [filteredDoctor, setFilteredDoctor] = useState([]);
 
-    useEffect(() => {
-        fetch(`http://localhost:4000/api/physicians/`)
-            .then((response) => response.json())
-            .then((response) => {
-                console.log(response);
-                setAllDoctors(response);
-            });
-    }, []);
+    // useEffect(() => {0
+    //     fetch(`http://localhost:4000/api/physicians/`)
+    //         .then((response) => response.json())
+    //         .then((response) => {
+    //             console.log(response);
+    //             setAllDoctors(response);
+    //         });
+    // }, []);
 
     useEffect(() => {
         setFilteredDoctor(
@@ -23,7 +24,7 @@ const PhysicianResults = () => {
                     .includes(inputBar.toLowerCase());
             })
         );
-    }, [inputBar, allDoctors]);
+    }, [inputBar]);
 
     return (
         <>
